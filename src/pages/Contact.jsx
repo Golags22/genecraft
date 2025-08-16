@@ -6,8 +6,8 @@ export default function Contact (){
     return(
         <div>
         <Hero />
+         <ContactForm />
         <ContactInfo />
-        <ContactForm />
         <MapSection />
         
         

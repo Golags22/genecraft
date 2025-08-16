@@ -7,7 +7,7 @@ export default function OurStory() {
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 dark:text-white relative inline-block">
             <span className="relative z-10">
               Our Journey
-              <span className="absolute bottom-0 left-0 w-full h-2 bg-blue-100 dark:bg-blue-900/50 transform -translate-y-1"></span>
+              <span className="absolute top-12 left-0 w-full h-2 bg-gradient-to-r from-blue-500 to-cyan-400 transform -translate-y-2"></span>
             </span>
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">

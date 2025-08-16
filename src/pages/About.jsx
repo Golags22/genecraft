@@ -1,4 +1,4 @@
-import { Hero, Mission, OurStory, WhatweOffer } from "../sections/about";
+import { Hero, Mission, OurStory, WhatweOffer,BoardOfDirectors, Partiners } from "../sections/about";
 import { CallToAction } from "../sections/home";
 
 export default function About(){
@@ -7,9 +7,11 @@ export default function About(){
         <div>
         <Hero />
         <Mission />
+        <BoardOfDirectors />
         <OurStory />
         <WhatweOffer />
         <CallToAction />
+        <Partiners />
         </div>
     )
 }

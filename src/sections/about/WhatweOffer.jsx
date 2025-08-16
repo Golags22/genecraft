@@ -7,11 +7,12 @@ export default function WhatWeOffer() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
             <span className="relative inline-block">
               What We Offer
-              <span className="absolute bottom-10 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-cyan-400 transform -translate-y-2"></span>
+              <span className="absolute top-12 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-cyan-400 transform -translate-y-2"></span>
             </span>
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Discover the benefits that make our learning platform unique
+            Five-month virtual training program in microbial genomics analyses using bioinformatics tools and bio-databases.
+
           </p>
         </div>
 
@@ -25,7 +26,7 @@ export default function WhatWeOffer() {
                 </svg>
               ),
               title: "Wide Range of Courses",
-              description: "10,000+ courses across all disciplines from beginner to advanced levels"
+              description: "Fundamentals in microbial genetics"
             },
             {
               icon: (
@@ -34,7 +35,7 @@ export default function WhatWeOffer() {
                 </svg>
               ),
               title: "Expert Instructors",
-              description: "Learn from industry professionals and top university professors"
+              description: "Learn Hands-on training with biological data sets"
             },
             {
               icon: (
@@ -43,7 +44,7 @@ export default function WhatWeOffer() {
                 </svg>
               ),
               title: "Global Community",
-              description: "Connect with 2 million+ learners from 100+ countries worldwide"
+              description: "Networking and career guidance in genomics"
             },
             {
               icon: (
@@ -52,7 +53,7 @@ export default function WhatWeOffer() {
                 </svg>
               ),
               title: "Learn Anywhere",
-              description: "Mobile apps and offline access let you learn on your schedule"
+              description: "Principle of molecular techniques and bioinformatics tools"
             }
           ].map((feature, index) => (
             <div 

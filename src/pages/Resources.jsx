@@ -1,8 +1,10 @@
+import { Resource, Hero } from './../sections/Resources';
 export default function Resources (){
 
     return(
-        <>
-        <h1>Resources</h1>
-        </>
+        <div>
+            <Hero />
+      <Resource />
+        </div>
     )
 }

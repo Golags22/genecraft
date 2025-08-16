@@ -168,6 +168,48 @@ export const courses = [
   },
 ];
 
+export const director = [
+    {
+      name: "GOLAGHA OGHENEVWEDE REGINA",
+      title: "CEO & Founder",
+      bio: " Solutions with 20+ years in education technology",
+      image: "https://res.cloudinary.com/ddquednvr/image/upload/v1755359446/CEO.png",
+      linkedin: "#"
+    },
+    {
+      name: "AANUOLUWAPO ALAKE",
+      title: "CO-FOUNDER",
+      bio: "Investment banker specializing in edtech startups and growth strategies",
+      image: "https://res.cloudinary.com/ddquednvr/image/upload/v1755359492/cof1.png",
+      linkedin: "#"
+    },
+    {
+      name: "SUNMOLA ADEBOLA",
+      title: "CO-FOUNDER",
+      bio: "Education policy expert and former university administrator",
+      image: "https://res.cloudinary.com/ddquednvr/image/upload/v1755359489/cof2.png",
+      linkedin: "#"
+    },
+    {
+      name: "OKOROMA BRIGHT",
+      title: "ICT",
+      bio: "CFO with extensive experience in financial management for nonprofits",
+      image: "https://res.cloudinary.com/ddquednvr/image/upload/v1755359489/cit.png",
+      linkedin: "#"
+    }
+  ];
+
+  export const partners = [
+    {
+        logo: "https://res.cloudinary.com/ddquednvr/image/upload/v1755360050/part1_kzodit.png",
+        name: "TOPLAHOLO BIOGEN",
+    },
+    {
+        logo: "https://res.cloudinary.com/ddquednvr/image/upload/v1755360044/part2_uddh48.png",
+        name: "LECTURE HUB",
+    },
+    // Add more partners as needed
+];
 export const featuredCourses = [
   {
     id: 101,

@@ -13,10 +13,10 @@ export default function Hero() {
           Transform Your Future with <span className="text-yellow-300">Gene-Craft</span>
         </h1>
         
-        <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-8 opacity-90 animate-fade-in-up delay-100">
-          Empowering <span className="font-semibold">millions of learners</span> worldwide with high-quality, 
-          affordable online education from top industry experts.
-        </p>
+     <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-8 opacity-90 animate-fade-in-up delay-100">
+  Gene Craft is a microbial genomics academy created to make bioinformatics knowledge 
+  and skills more accessible to African undergraduate and graduate students in biosciences.  
+</p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-up delay-200">
           <button className="px-8 py-4 bg-white text-blue-700 rounded-xl font-bold hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">

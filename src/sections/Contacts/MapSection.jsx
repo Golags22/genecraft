@@ -6,7 +6,7 @@ export default function MapSection() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
             <span className="relative inline-block">
               Visit Our Campus
-              <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-cyan-400 transform -translate-y-2"></span>
+              <span className="absolute top-12 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-cyan-400 transform -translate-y-2"></span>
             </span>
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
@@ -32,7 +32,7 @@ export default function MapSection() {
           {/* Location Info */}
           <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 shadow-lg">
             <h3 className="text-xl font-bold mb-6 text-gray-900 dark:text-white">
-              E-Learn Headquarters
+              Gene-Craft Headquarters
             </h3>
             
             <div className="space-y-6">
