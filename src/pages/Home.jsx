@@ -1,3 +1,4 @@
+import { Partiners } from "../sections/about";
 import { AboutSection, CallToAction, FeaturedCourses, Hero, Testimonials } from "../sections/home";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
      <AboutSection />
      <Testimonials />
      <CallToAction />
+     <Partiners />
     </div>
   );
 }
