@@ -11,19 +11,20 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="fixed w-full backdrop-blur-sm bg-gradient-to-r from-[#0b3c9192] via-[#0AAE9F] to-[#00C896] z-50 shadow-sm">
+    <nav className="fixed w-full backdrop-blur-sm bg-[#74377a] z-50 shadow-sm pt-3 pb-3">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <div className="w-20 h-20 flex items-center justify-center">
-              <img 
-                src="/icons/logo.png" 
-                alt="Logo" 
-                className="w-full h-full object-contain hover:scale-105 transition-transform duration-200"
-              />
-            </div>
-            <span className=" text-xl font-bold text-white hidden sm:block">Gene Craft</span>
+            <div className="w-[90px] h-[90px] overflow-hidden">
+  <img 
+    src="/icons/LogoGen.png" 
+    alt="Logo" 
+    className="w-full h-full object-cover bg-white p-1 rounded"
+  />
+</div>
+
+            <span className=" text-xl font-bold text-white hidden sm:block pl-2">Gene Craft</span>
           </Link>
 
           {/* Desktop Navigation Links */}
@@ -35,21 +36,24 @@ export default function Navbar() {
                   <Link
                     key={r.path}
                     to={r.path}
-                    className={`relative group text-white hover:text-gray-100 px-1 py-2 text-md font-medium transition-colors duration-200`}
+                    className={`relative group text-white hover:text-gray-100 px-1 py-2 text-md font-medium transition-colors duration-200 ${r.title === "Sign Up" ? "w-[100px] h-auto outline outline-offset-2 outline-1 flex items-center justify-center bg-[#74377a] text-white font-semibold px-4 py-2 rounded hover:bg-[#5c2e63] transition z-50": "" }}`}
                   >
                     {r.title}
+                 
                     {/* Animated underline */}
                     <span
-                      className={`absolute left-0 bottom-0 h-0.5 bg-white transition-all duration-300 ease-out ${
-                        location.pathname === r.path
-                          ? "w-full"
-                          : "w-0 group-hover:w-full"
-                      }`}
-                    ></span>
+  className={`absolute left-0 bottom-0 h-0.5 bg-white transition-all duration-300 ease-out ${
+    location.pathname === r.path
+      ? "w-full"
+      : "w-0 group-hover:w-full"
+  } ${r.path === "/users/signup" ? "hidden" : ""}`}
+></span>
+
                   </Link>
                 ))}
             </div>
           </div>
+          
 
           {/* Mobile menu button */}
           <div className="md:hidden">

@@ -10,9 +10,7 @@ export default function Hero() {
   const heroRef = useRef(null);
   const imageContainerRef = useRef(null);
   const textRef = useRef(null);
-//   const buttonRef = useRef(null);
-  
-  // Curated high-res images
+
   const images = [
     "https://media.istockphoto.com/id/2211578714/photo/lab-science-and-black-woman-with-microscope-for-research-study-sample-and-development.jpg?s=612x612&w=0&k=20&c=62f446afV0oJH35W4lwVOuIZuaechHgO7Gm5Z94D6Cc=",
     "https://media.istockphoto.com/id/1399511097/photo/monkey-pox-virus-cells-microscope-slide.jpg?s=612x612&w=0&k=20&c=QnbT3Ys2JPbo0hoLrbRbEeL57bdz55tCDhZdeRYiSD0=",
@@ -20,7 +18,6 @@ export default function Hero() {
   ];
 
   useGSAP(() => {
-    // Initial animations
     gsap.from(textRef.current, {
       opacity: 0,
       y: 50,
@@ -29,16 +26,6 @@ export default function Hero() {
       delay: 0.4
     });
 
-    // gsap.from(buttonRef.current.children, {
-    //   opacity: 0,
-    //   y: 30,
-    //   duration: 0.8,
-    //   stagger: 0.15,
-    //   ease: "back.out(1.7)",
-    //   delay: 0.8
-    // });
-
-    // Image transition timeline
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: heroRef.current,
@@ -49,43 +36,12 @@ export default function Hero() {
       }
     });
 
-    // First image stays dominant initially
-    tl.to(".image-section:nth-child(1)", {
-      opacity: 1,
-      scale: 1,
-      y: 0,
-      duration: 0.5
-    })
-    // Second image enters
-    .to(".image-section:nth-child(2)", {
-      opacity: 1,
-      scale: 1.05,
-      y: -50,
-      duration: 1
-    }, 0.3)
-    // First image exits
-    .to(".image-section:nth-child(1)", {
-      opacity: 0,
-      scale: 0.95,
-      y: 50,
-      duration: 1
-    }, 0.8)
-    // Third image enters
-    .to(".image-section:nth-child(3)", {
-      opacity: 1,
-      scale: 1.08,
-      y: -30,
-      duration: 1.2
-    }, 1.2)
-    // Second image exits
-    .to(".image-section:nth-child(2)", {
-      opacity: 0,
-      scale: 0.97,
-      y: 40,
-      duration: 1
-    }, 1.5);
+    tl.to(".image-section:nth-child(1)", { opacity: 1, scale: 1, y: 0, duration: 0.5 })
+      .to(".image-section:nth-child(2)", { opacity: 1, scale: 1.05, y: -50, duration: 1 }, 0.3)
+      .to(".image-section:nth-child(1)", { opacity: 0, scale: 0.95, y: 50, duration: 1 }, 0.8)
+      .to(".image-section:nth-child(3)", { opacity: 1, scale: 1.08, y: -30, duration: 1.2 }, 1.2)
+      .to(".image-section:nth-child(2)", { opacity: 0, scale: 0.97, y: 40, duration: 1 }, 1.5);
 
-    // Floating effect for images
     gsap.to(".image-section", {
       y: 20,
       duration: 3,
@@ -93,58 +49,59 @@ export default function Hero() {
       yoyo: true,
       ease: "sine.inOut"
     });
-
   }, []);
 
   return (
     <section
       ref={heroRef}
-      className="relative min-h-screen w-full overflow-hidden bg-gradient-to-br from-gray-900 to-gray-950 flex items-center px-6 sm:px-12 lg:px-24 py-16"
+      className="relative min-h-screen w-full overflow-hidden bg-white flex items-center px-6 sm:px-12 lg:px-24 py-16"
     >
-      {/* Content Container */}
+      {/* Background Elements */}
       <div className="absolute inset-0 w-full h-full z-0 overflow-hidden">
-        {/* Animated Background Elements */}
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,rgba(20,120,200,0.1)_0%,transparent_70%)]"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl"></div>
-        <div className="absolute -top-20 -right-20 w-64 h-64 bg-cyan-400/10 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-[#74377a]/10 rounded-full blur-3xl"></div>
+        <div className="absolute -top-20 -right-20 w-64 h-64 bg-[#f9b7dd]/10 rounded-full blur-3xl"></div>
       </div>
 
       {/* Text Content */}
-      <div className="w-full lg:w-1/2 z-10 relative">
+      <div className="w-full lg:w-1/2 z-10 relative top-10 lg:top-0">
         <div ref={textRef} className="max-w-2xl">
-          <div className="inline-block px-4 py-2 mb-6 bg-white/10 backdrop-blur-sm rounded-full border border-white/10">
-            <span className="text-sm font-semibold text-cyan-300">New Courses Available</span>
+          {/* Badge */}
+          <div className="inline-block px-4 py-2 mb-6 bg-[#74377a]/10 backdrop-blur-sm rounded-full border border-white/10">
+            <span className="text-sm font-semibold text-[#74377a]">New Courses Available</span>
           </div>
-          
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white mb-6 leading-tight">
+
+          {/* Headline */}
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-gray-700 mb-6 leading-tight">
             <span className="block">Unlock Your</span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f9b7dd] to-[#74377a]">
               Potential
             </span>
           </h1>
-          
-          <p className="text-xl sm:text-2xl text-gray-300 mb-8 leading-relaxed">
-            Join <span className="font-semibold text-white">50,000+ professionals</span> transforming their careers with our expert-led courses.
+
+          {/* Subheadline */}
+          <p className="text-xl sm:text-2xl text-gray-700 mb-8 leading-relaxed">
+            Join <span className="font-semibold text-gray-700">50,000+ professionals</span> transforming their careers with our expert-led courses.
           </p>
-          
+
+          {/* Buttons */}
           <div className="flex flex-wrap gap-4">
+            {/* Primary Button */}
             <Link
               to="/courses"
-              className="relative px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-bold rounded-xl hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-300 group overflow-hidden"
+              className="relative px-8 py-4 bg-gradient-to-r from-[#f9b7dd] to-[#74377a] text-white font-bold rounded-xl hover:shadow-xl hover:shadow-[#74377a]/40 transition-all duration-300 group overflow-hidden flex items-center"
             >
-              <span className="relative z-10 flex items-center">
-                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-                Explore Courses
-              </span>
-              <span className="absolute inset-0 bg-gradient-to-r from-blue-700 to-cyan-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              Explore Courses
             </Link>
-            
+
+            {/* Secondary Button */}
             <Link
               to="/signup"
-              className="px-8 py-4 border-2 border-white/20 text-white font-bold rounded-xl hover:bg-white/10 hover:border-white/30 transition-all duration-300 flex items-center"
+              className="relative px-8 py-4 bg-gradient-to-r from-[#74377a] to-[#f9b7dd] text-white font-bold rounded-xl hover:shadow-xl hover:shadow-[#74377a]/40 transition-all duration-300 group overflow-hidden flex items-center"
             >
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
@@ -152,11 +109,12 @@ export default function Hero() {
               Start Free Trial
             </Link>
           </div>
-          
+
+          {/* Reviews / Students */}
           <div className="mt-8 flex items-center space-x-4">
             <div className="flex -space-x-2">
               {[1, 2, 3, 4].map((item) => (
-                <img 
+                <img
                   key={item}
                   src={`https://randomuser.me/api/portraits/${item % 2 === 0 ? 'women' : 'men'}/${item+20}.jpg`}
                   alt="Student"
@@ -164,8 +122,8 @@ export default function Hero() {
                 />
               ))}
             </div>
-            <div className="text-sm text-gray-400">
-              <span className="font-medium text-white">4.9/5</span> from 2,500+ reviews
+            <div className="text-sm text-gray-600 ">
+              <span className="font-medium text-gray-600">4.9/5</span> from 2,500+ reviews
             </div>
           </div>
         </div>
@@ -195,9 +153,9 @@ export default function Hero() {
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
         <div className="animate-bounce flex flex-col items-center">
-          <span className="text-xs text-gray-400 mb-1">Scroll to explore</span>
+          <span className="text-xs text-[#74377a] mb-1">Scroll to explore</span>
           <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center p-1">
-            <div className="w-1 h-2 bg-white rounded-full animate-scroll-indicator"></div>
+            <div className="w-1 h-2 bg-gradient-to-r from-[#f9b7dd] to-[#74377a] rounded-full animate-scroll-indicator"></div>
           </div>
         </div>
       </div>

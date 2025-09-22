@@ -172,7 +172,7 @@ export const director = [
     {
       name: "GOLAGHA OGHENEVWEDE REGINA",
       title: "CEO & Founder",
-      bio: " Solutions with 20+ years in education technology",
+      bio: " Molecular biologist with specialties in the application of bioinformatics for disease diagnosis. Research areas focuses on the application of genetically engineered nanoparticles or antibiotics delivery.",
       image: "https://res.cloudinary.com/ddquednvr/image/upload/v1755359446/CEO.png",
       linkedin: "#"
     },
@@ -317,67 +317,67 @@ export const featuredCourses = [
 ];
 export const testimonials = [
   {
-    name: "Alice Johnson",
-    role: "Software Engineer",
+    name: "Aisha Eniola Olayiwola",
+    role: "Student",
     rating: 4.5,
-    feedback: "This course helped me land my dream job! The content was clear, engaging, and very practical.",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-    course: "Full-Stack Web Development"
+    feedback: "Participating in the Hands-on Training in Microbial Genomics Data Analysis was a pivotal experience, providing practical skills in genomic databases, sequence assembly, annotation, comparative genomics, and phylogenetic analysis. The drug design module broadened understanding of bioinformatics in therapeutic discovery, while mentorship and scientific writing training enhanced research communication. Overall, the programme built both competence and confidence to contribute meaningfully to microbial genomics and related fields.",
+    avatar: "https://res.cloudinary.com/ddquednvr/image/upload/v1758524124/Img1.jpg",
+    course: "Microbial Genomics"
   },
   {
     name: "Michael Smith",
-    role: "Data Analyst",
+    role: "Student",
     rating: 4.2,
-    feedback: "Great explanations on complex topics. The hands-on projects were especially helpful to solidify my skills.",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-    course: "Data Science Fundamentals"
+    feedback: "This training was a great experience, as I gained practical skills in key areas such as Fundamentals of Microbial Genomics and Molecular Techniques, Comparative Genomics and Phylogenetics, and Functional Genomics and RNA Sequence Analysis. It also sharpened my ability to effectively work with bioinformatics tools.",
+    avatar: "https://res.cloudinary.com/ddquednvr/image/upload/v1758524125/Img2.jpg",
+    course: "Microbial Genomics"
   },
   {
-    name: "Sophia Lee",
-    role: "Cybersecurity Specialist",
+    name: "Princess Ijeoma",
+    role: "Student",
     rating: 3.4,
-    feedback: "I feel confident tackling real security challenges thanks to this course. Highly recommend for beginners!",
-    avatar: "https://randomuser.me/api/portraits/women/68.jpg",
-    course: "Cybersecurity Essentials"
+    feedback: "My time at Gene Craft Microbial Academy was truly transformative. Over five months, I gained hands-on experience in microbial genomics, molecular techniques, functional and comparative genomics, and computer-aided drug design. What made the journey special was the supportive mentors and collaborative projects that turned learning into an inspiring experience. I am truly grateful to the organizers, facilitators and partners of the academy 😇🙏",
+    avatar: "    https://res.cloudinary.com/ddquednvr/image/upload/v1758524124/Img3.jpg",
+    course: "Microbial Genomics"
   },
   {
-    name: "Daniel Carter",
-    role: "Frontend Developer",
+    name: "Abubakar Lawal Shehu ",
+    role: "Student",
     rating: 4.8,
-    feedback: "The projects in this course gave me real-world experience. I could apply my skills immediately at work.",
-    avatar: "https://randomuser.me/api/portraits/men/22.jpg",
-    course: "Advanced React & Next.js"
+    feedback: "This program transformed my approach to microbial research, equipping me with practical knowledge, innovative tools, and a renewed passion for scientific discovery.",
+    avatar: " https://res.cloudinary.com/ddquednvr/image/upload/v1758524125/Img4.jpg",
+    course: "Microbial Genomics"
   },
   {
     name: "Emily Davis",
-    role: "UX/UI Designer",
+    role: "Student",
     rating: 4.6,
-    feedback: "Loved the mix of theory and practice. The design principles I learned have transformed my workflow.",
-    avatar: "https://randomuser.me/api/portraits/women/12.jpg",
-    course: "UX/UI Design Masterclass"
+    feedback: "The past five months have been enriching, and it's all thanks to the Gene Craft Academy.Beyond expanding my theoretical knowledge as a microbiologist, I’ve gained hands-on experience with computational tools used in drug testing and learned how to leverage technology to design innovative medical interventions.This wasn’t just a training program for me, it was true empowerment!",
+    avatar: "https://res.cloudinary.com/ddquednvr/image/upload/v1758524125/Img5.jpg",
+    course: "Microbial Genomics"
   },
   {
-    name: "James Wilson",
-    role: "Cloud Engineer",
+    name: "Abdulrahman Olamilekan Raji",
+    role: "Student",
     rating: 4.3,
-    feedback: "A solid foundation in cloud computing. The AWS labs were especially useful.",
-    avatar: "https://randomuser.me/api/portraits/men/45.jpg",
-    course: "Cloud Computing with AWS"
+    feedback: "My five-month internship at Genecraft Academy was a truly transformative experience, offering a judicious blend of rigorous hands-on training and incisive theoretical sessions. The program’s emphasis on computer-aided drug discovery and bioinformatics techniques, supported by exceptional mentorship and structured resources, rendered complex concepts both lucid and intellectually stimulating. This immersive experience has fortified my technical acumen and deepened my passion for computational drug discovery, positioning me for excellence in future academic and research endeavors.",
+    avatar: "https://res.cloudinary.com/ddquednvr/image/upload/v1758524125/Img6.jpg",
+    course: "Microbial Genomics"
   },
   {
     name: "Olivia Martinez",
-    role: "AI Researcher",
+    role: "Student",
     rating: 4.9,
-    feedback: "Incredible content! The AI projects pushed me to think critically and creatively.",
-    avatar: "https://randomuser.me/api/portraits/women/30.jpg",
-    course: "Artificial Intelligence & Machine Learning"
+    feedback: "Through the Gene Craft Academy's mentorship program, I have significantly upgraded my bioinformatics skills. During my internship, I gained hands-on experience in network pharmacology, including ligand prediction and protein-protein interaction analysis using Cytoscape. Additionally, I utilized Galaxy software for genomic annotation and functional gene analysis, further expanding my skills in computer-aided drug design. This opportunity not only enhanced my knowledge but also enabled me to conceptualize manuscripts on in silico studies and bioinformatics analysis. Working alongside young researchers, I have learned, unlearned, and relearned, fostering growth and collaboration. I appreciate the mentorship provided by Gene Craft Academy, a hub for knowledge in genetic studies using computational techniques.",
+    avatar: "https://res.cloudinary.com/ddquednvr/image/upload/v1758524125/Img7.jpg",
+    course: "Microbial Genomics"
   },
   {
     name: "Ryan Thompson",
-    role: "Mobile App Developer",
+    role: "Student",
     rating: 4.7,
-    feedback: "Building real apps with Flutter was a game changer for my career. Highly practical course.",
-    avatar: "https://randomuser.me/api/portraits/men/54.jpg",
-    course: "Flutter & Dart Mobile Development"
+    feedback: "Gene Craft taught me a lot about in-silico analysis, and the hands-on project was my favorite part. The training was practical, engaging, and gave me real skills I can apply in my research. I’m truly grateful for the experience.",
+    avatar: "https://res.cloudinary.com/ddquednvr/image/upload/v1758524126/Img8.jpg",
+    course: "Microbial Genomics"
   }
 ];

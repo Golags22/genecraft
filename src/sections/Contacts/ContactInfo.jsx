@@ -7,7 +7,7 @@ export default function ContactInfo() {
         </svg>
       ),
       title: "Email Us",
-      value: "support@e-learn.com",
+      value: "genecraft001@gmail.com",
       action: "mailto:support@e-learn.com",
       description: "Get quick responses within 24 hours"
     },
@@ -18,7 +18,7 @@ export default function ContactInfo() {
         </svg>
       ),
       title: "Call Us",
-      value: "+1 (234) 567-8900",
+      value: "+234 9034829264",
       action: "tel:+12345678900",
       description: "Mon-Fri, 9am-5pm EST"
     },
@@ -30,8 +30,8 @@ export default function ContactInfo() {
         </svg>
       ),
       title: "Visit Us",
-      value: "123 Learning Street, Knowledge City, USA",
-      action: "https://maps.google.com",
+      value: "Kemta, Idi-aba Abeokuta, Ogun State Nigeria",
+      action: "https://www.google.com/maps/place/Idi-aba,+Abeokuta,+Ogun+State,+Nigeria/@7.1441448,3.3691281,1063m/data=!3m2!1e3!4b1!4m6!3m5!1s0x103a4bb62acf183d:0xd4fe4ebecaa2287f!8m2!3d7.1441448!4d3.3717084!16s%2Fg%2F11g_rs05h?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D",
       description: "Schedule a visit to our headquarters"
     }
   ];

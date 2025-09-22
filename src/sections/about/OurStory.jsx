@@ -11,7 +11,7 @@ export default function OurStory() {
             </span>
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            From humble beginnings to becoming a global learning platform
+           Established February 2025 with its fist onboarding session 100 students plus student in May which started as a first cohort. 
           </p>
         </div>
 

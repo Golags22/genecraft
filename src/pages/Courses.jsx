@@ -1,16 +1,39 @@
-import { courses } from "../Data/data";
 import CourseCard from './../components/CourseCard';
-import { useState } from 'react';
+import { useState, useEffect } from "react";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../../database/firebase";
 
 export default function Courses() {
   const [activeCategory, setActiveCategory] = useState('All');
-  
+  const [courses, setCourses] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    const fetchCourses = async () => {
+      setIsLoading(true);
+      try {
+        const querySnapshot = await getDocs(collection(db, "courses"));
+        const coursesData = querySnapshot.docs.map(doc => ({
+          id: doc.id,
+          ...doc.data()
+        }));
+        setCourses(coursesData);
+      } catch (error) {
+        console.error("Error fetching courses:", error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchCourses();
+  }, []);
+
   // Get unique categories
   const categories = ['All', ...new Set(courses.map(course => course.category))];
-  
+
   // Filter courses by category
-  const filteredCourses = activeCategory === 'All' 
-    ? courses 
+  const filteredCourses = activeCategory === 'All'
+    ? courses
     : courses.filter(course => course.category === activeCategory);
 
   return (
@@ -46,7 +69,9 @@ export default function Courses() {
 
       {/* Course Grid */}
       <div className="max-w-7xl mx-auto">
-        {filteredCourses.length > 0 ? (
+        {isLoading ? (
+          <p className="text-center text-gray-500 dark:text-gray-400">Loading courses...</p>
+        ) : filteredCourses.length > 0 ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredCourses.map((course) => (
               <CourseCard key={course.id} course={course} />

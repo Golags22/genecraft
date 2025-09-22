@@ -18,8 +18,8 @@ export default function MapSection() {
           {/* Map Container */}
           <div className="lg:col-span-2 rounded-xl overflow-hidden shadow-xl">
             <iframe
-              title="E-Learn Headquarters"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215256598887!2d-73.9878446845938!3d40.74844047932799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjQiTiA3M8KwNTknMTkuMyJX!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+              title="Gene-Craft Headquarters"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4628.95953424817!2d3.3717083999999997!3d7.1441447999999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103a4bb62acf183d%3A0xd4fe4ebecaa2287f!2sIdi-aba%2C%20Abeokuta%2C%20Ogun%20State%2C%20Nigeria!5e1!3m2!1sda!2sdk!4v1756406884064!5m2!1sda!2sdk"
               width="100%"
               height="400"
               style={{ border: 0 }}
@@ -42,8 +42,8 @@ export default function MapSection() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                 </svg>
                 <div>
-                  <p className="text-gray-700 dark:text-gray-300 font-medium">123 Learning Street</p>
-                  <p className="text-gray-700 dark:text-gray-300">Knowledge City, NY 10001</p>
+                  <p className="text-gray-700 dark:text-gray-300 font-medium">Kemta, Idi-aba</p>
+                  <p className="text-gray-700 dark:text-gray-300"> Abeokuta, Ogun State Nigeria</p>
                 </div>
               </div>
 
@@ -52,7 +52,7 @@ export default function MapSection() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                 </svg>
                 <div>
-                  <p className="text-gray-700 dark:text-gray-300 font-medium">+1 (234) 567-8900</p>
+                  <p className="text-gray-700 dark:text-gray-300 font-medium">+(234) 9034829264</p>
                   <p className="text-gray-500 dark:text-gray-400 text-sm">Mon-Fri, 9am-5pm EST</p>
                 </div>
               </div>
@@ -69,7 +69,7 @@ export default function MapSection() {
 
               <div className="pt-4">
                 <a
-                  href="https://maps.google.com"
+                  href="https://maps.app.goo.gl/WFgi9z34KrcrwQES6"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors duration-300"

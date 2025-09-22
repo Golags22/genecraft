@@ -1,10 +1,34 @@
 import { useParams } from "react-router-dom";
-import { courses } from "../Data/data";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../../database/firebase";
+import { useState, useEffect } from "react";
 import { FaStar, FaRegStar, FaPlay, FaClock, FaUserGraduate } from "react-icons/fa";
 
 export default function CourseDetails() {
-  const { id } = useParams();
-  const course = courses.find((c) => c.id === parseInt(id));
+  const [courses, setCourses] = useState([]);
+const [isLoading, setIsLoading] = useState(false);
+const { id } = useParams();
+const course = courses.find((c) => c.id === id); // compare as string
+
+ useEffect(() => {
+    const fetchCourses = async () => {
+      setIsLoading(true);
+      try {
+        const querySnapshot = await getDocs(collection(db, "courses"));
+        const coursesData = querySnapshot.docs.map(doc => ({
+          id: doc.id,
+          ...doc.data()
+        }));
+        setCourses(coursesData);
+      } catch (error) {
+        console.error("Error fetching courses:", error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchCourses();
+  }, []);
 
   if (!course) {
     return (
@@ -57,6 +81,13 @@ export default function CourseDetails() {
     }
     return stars;
   };
+if (isLoading) {
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-900">
+      <p className="text-gray-500 dark:text-gray-400">Loading course details...</p>
+    </div>
+  );
+}
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
@@ -304,7 +335,7 @@ export default function CourseDetails() {
                     Last Updated
                   </h4>
                   <p className="mt-1 text-sm text-gray-900 dark:text-white">
-                    {course.updatedDate || "N/A"}
+                    {course.updatedDate|| "N/A"}
                   </p>
                 </div>
                 <div>

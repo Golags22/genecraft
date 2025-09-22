@@ -11,7 +11,7 @@ export default function Mission() {
             </span>
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Driving innovation in microbial genomics education and research
+           At Gene Craft Microbial Genomics Academy, our purpose is to empower the next generation of African scientists with the knowledge, skills, and tools needed to excel in microbial genomics and bioinformatics. We exist to close the gap in advanced bioscience education by providing accessible, hands-on training that prepares students and researchers to tackle global health challenges, drive innovation in genomic research, and contribute to sustainable development through quality education
           </p>
         </div>
 
