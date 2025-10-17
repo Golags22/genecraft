@@ -11,32 +11,35 @@ const geneticsCourses = [
   {
     id: 1,
     image: "https://res.cloudinary.com/ddquednvr/image/upload/v1756835286/IMG_202508240_215818190_ntctef.jpg",
-    name: "Genomic Sequencing Fundamentals",
-    instructor: "Dr. Emily Chen",
+    name: "Fundamentals in Microbial Genetics and Techniques",
+    instructor: "Gina Golagha",
     duration: "8 weeks",
     level: "Intermediate",
     rating: 4.8,
-    students: 1245
+    // students: 1245
+    discription:"Understand the principles of microbial genetics and gain hands-on experience with essential laboratory techniques.",
   },
   {
     id: 2,
     image: "https://res.cloudinary.com/ddquednvr/image/upload/v1756835286/IMG_202508240_215837441_jx04cy.jpg",
-    name: "CRISPR Technology & Applications",
-    instructor: "Prof. Michael Rodriguez",
-    duration: "10 weeks",
+    name: "Comparative Genomics and Phylogenetics",
+        discription:"Discover how to compare genomes across species and build phylogenetic trees to understand evolutionary relationships.",
+    instructor: "Gina ",
+    duration: "2 weeks",
     level: "Advanced",
     rating: 4.9,
-    students: 987
+    // students: 987
   },
   {
     id: 3,
-    image: "https://res.cloudinary.com/ddquednvr/image/upload/v1756835291/IMG_202508240_215839588_swp1gg.jpg",
-    name: "Genetic Counseling Certification",
-    instructor: "Dr. Sarah Johnson",
+    image: "https://res.cloudinary.com/ddquednvr/image/upload/v1756835291/img.jpg",
+    name: "Gene Assembly, Annotation, and Prediction",
+    discription:"Explore methods for assembling genomes, annotating genes, and predicting genetic functions.",
+    instructor: "Mr Temitayo",
     duration: "12 weeks",
     level: "Beginner",
     rating: 4.7,
-    students: 1567
+    // students: 1567
   }
 ];
 
@@ -130,6 +133,7 @@ export default function FeaturedCourses() {
                   alt={course.name}
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
                 />
+               
                 <div className="absolute top-4 right-4 bg-[#74377a] text-white text-xs font-bold px-3 py-1 rounded-full">
                   {course.level}
                 </div>
@@ -144,6 +148,9 @@ export default function FeaturedCourses() {
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-[#74377a] dark:group-hover:text-[#f9b7dd] transition-colors duration-300">
                   {course.name}
+                </h3>
+                <h3 className="text-sl text-gray-900 dark:text-white mb-2 group-hover:text-[#74377a] dark:group-hover:text-[#f9b7dd] transition-colors duration-300">
+                   {course.discription}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 text-sm mb-3">
                   Instructor: <span className="font-medium">{course.instructor}</span>
@@ -163,9 +170,9 @@ export default function FeaturedCourses() {
                       </svg>
                     ))}
                   </div>
-                  <span className="text-sm text-gray-600 dark:text-gray-300">
+                  {/* <span className="text-sm text-gray-600 dark:text-gray-300">
                     {course.rating} ({course.students.toLocaleString()} students)
-                  </span>
+                  </span> */}
                 </div>
 
                 {/* Course Details */}
@@ -177,7 +184,7 @@ export default function FeaturedCourses() {
                     {course.duration}
                   </span>
                   <span className="text-lg font-bold text-[#74377a] dark:text-[#f9b7dd]">
-                    $199
+                    $11.00
                   </span>
                 </div>
 

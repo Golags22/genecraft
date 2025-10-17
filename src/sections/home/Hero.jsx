@@ -73,15 +73,16 @@ export default function Hero() {
 
           {/* Headline */}
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-gray-700 mb-6 leading-tight">
-            <span className="block">Unlock Your</span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f9b7dd] to-[#74377a]">
-              Potential
+            <span className="block text-6xl"> Welcome to Gene Craft</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f9b7dd] to-[#74377a] text-4xl">
+              Microbial Genomics Academy
             </span>
           </h1>
+       
 
           {/* Subheadline */}
           <p className="text-xl sm:text-2xl text-gray-700 mb-8 leading-relaxed">
-            Join <span className="font-semibold text-gray-700">50,000+ professionals</span> transforming their careers with our expert-led courses.
+            Unlock <span className="font-semibold text-gray-700">your potentials </span> with hands-on skills in Genomic data analysis and computer aided drug design(CAAD)
           </p>
 
           {/* Buttons */}
@@ -106,26 +107,11 @@ export default function Hero() {
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
               </svg>
-              Start Free Trial
+              Register with us
             </Link>
           </div>
 
-          {/* Reviews / Students */}
-          <div className="mt-8 flex items-center space-x-4">
-            <div className="flex -space-x-2">
-              {[1, 2, 3, 4].map((item) => (
-                <img
-                  key={item}
-                  src={`https://randomuser.me/api/portraits/${item % 2 === 0 ? 'women' : 'men'}/${item+20}.jpg`}
-                  alt="Student"
-                  className="w-10 h-10 rounded-full border-2 border-white/20"
-                />
-              ))}
-            </div>
-            <div className="text-sm text-gray-600 ">
-              <span className="font-medium text-gray-600">4.9/5</span> from 2,500+ reviews
-            </div>
-          </div>
+         
         </div>
       </div>
 
