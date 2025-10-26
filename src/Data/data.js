@@ -6,7 +6,7 @@ export const courses = [
     reviews: 100,
     students: 100,
     duration: "2:00 hr",
-    updatedDate:2025,
+    updatedDate: 2025,
     description:
       "Understand security threats, ethical hacking, and defence strategies to protect networks, systems, and sensitive data.",
     image:
@@ -15,9 +15,9 @@ export const courses = [
     price: 49.99,
     originalPrice: 50,
     instructor: {
-         title:"Mr.",
+      title: "Mr.",
       name: "Williams",
-      numbersofcourses:2,
+      numbersofcourses: 2,
       avatar:
         "https://media.istockphoto.com/id/183351132/photo/math-teacher-explaining.jpg?s=612x612&w=0&k=20&c=YI5w0ZHOLQK78OcMpEPDohmSGGwoQxNXKk9SHsXTgt8=",
     },
@@ -33,7 +33,11 @@ export const courses = [
         sectionTitle: "Security Fundamentals",
         lessons: [
           { id: 1, title: "Cybersecurity Fundamentals", duration: "20 min" },
-          { id: 2, title: "Types of Cyber Threats & Attacks", duration: "25 min" },
+          {
+            id: 2,
+            title: "Types of Cyber Threats & Attacks",
+            duration: "25 min",
+          },
           { id: 3, title: "Network Security Basics", duration: "30 min" },
         ],
       },
@@ -41,7 +45,11 @@ export const courses = [
         sectionTitle: "Advanced Security Concepts",
         lessons: [
           { id: 4, title: "Cryptography Principles", duration: "30 min" },
-          { id: 5, title: "Vulnerability Assessment & Penetration Testing", duration: "35 min" },
+          {
+            id: 5,
+            title: "Vulnerability Assessment & Penetration Testing",
+            duration: "35 min",
+          },
           { id: 6, title: "Ethical Hacking Practices", duration: "40 min" },
         ],
       },
@@ -49,7 +57,11 @@ export const courses = [
         sectionTitle: "Response & Compliance",
         lessons: [
           { id: 7, title: "Incident Response & Recovery", duration: "25 min" },
-          { id: 8, title: "Security Best Practices & Compliance", duration: "20 min" },
+          {
+            id: 8,
+            title: "Security Best Practices & Compliance",
+            duration: "20 min",
+          },
         ],
       },
     ],
@@ -62,7 +74,7 @@ export const courses = [
     reviews: 100,
     students: 100,
     duration: "2:00 hr",
-    updatedDate:2025,
+    updatedDate: 2025,
     description:
       "Gain hands-on skills in Python, data analysis, and visualisation while learning essential statistics and machine learning concepts.",
     image:
@@ -71,9 +83,9 @@ export const courses = [
     price: 59.99,
     originalPrice: 50,
     instructor: {
-        title:"Mr.",
+      title: "Mr.",
       name: "Ben",
-       numbersofcourses:2,
+      numbersofcourses: 2,
       avatar:
         "https://media.istockphoto.com/id/2216529853/photo/smiling-teacher-standing-in-classroom-with-arms-crossed-by-whiteboard-with-math-equations.jpg?s=612x612&w=0&k=20&c=hZR_GYlOFDRC3LARGQnaniJRP6DoMKmQMOoaUBc96pQ=",
     },
@@ -88,7 +100,11 @@ export const courses = [
       {
         sectionTitle: "Introduction",
         lessons: [
-          { id: 1, title: "Introduction to Data Science & Analytics", duration: "15 min" },
+          {
+            id: 1,
+            title: "Introduction to Data Science & Analytics",
+            duration: "15 min",
+          },
           { id: 2, title: "Python for Data Analysis", duration: "25 min" },
         ],
       },
@@ -97,15 +113,31 @@ export const courses = [
         lessons: [
           { id: 3, title: "Data Cleaning & Preprocessing", duration: "30 min" },
           { id: 4, title: "Exploratory Data Analysis", duration: "35 min" },
-          { id: 5, title: "Statistics & Probability Basics", duration: "40 min" },
+          {
+            id: 5,
+            title: "Statistics & Probability Basics",
+            duration: "40 min",
+          },
         ],
       },
       {
         sectionTitle: "Machine Learning",
         lessons: [
-          { id: 6, title: "Data Visualisation (Matplotlib, Seaborn)", duration: "30 min" },
-          { id: 7, title: "Introduction to Machine Learning", duration: "40 min" },
-          { id: 8, title: "Capstone Data Analysis Project", duration: "50 min" },
+          {
+            id: 6,
+            title: "Data Visualisation (Matplotlib, Seaborn)",
+            duration: "30 min",
+          },
+          {
+            id: 7,
+            title: "Introduction to Machine Learning",
+            duration: "40 min",
+          },
+          {
+            id: 8,
+            title: "Capstone Data Analysis Project",
+            duration: "50 min",
+          },
         ],
       },
     ],
@@ -118,7 +150,7 @@ export const courses = [
     reviews: 100,
     students: 100,
     duration: "2:00 hr",
-    updatedDate:2025,
+    updatedDate: 2025,
     description:
       "Learn to design, build, and deploy dynamic websites using HTML, CSS, JavaScript, and modern frameworks for both front-end and back-end.",
     image:
@@ -127,9 +159,9 @@ export const courses = [
     price: 39.99,
     originalPrice: 50,
     instructor: {
-         title:"Mr.",
+      title: "Mr.",
       name: "Emmanuel",
-       numbersofcourses:2,
+      numbersofcourses: 2,
       avatar:
         "https://media.istockphoto.com/id/1260700263/photo/handsome-young-man-looking-at-camera-and-smiling.jpg?s=612x612&w=0&k=20&c=onUJqYpV4rwImg-bKiLejxdPcC-VEQaQ-d8NyXokPyA=",
     },
@@ -145,15 +177,27 @@ export const courses = [
         sectionTitle: "Frontend Development",
         lessons: [
           { id: 1, title: "HTML & CSS Fundamentals", duration: "20 min" },
-          { id: 2, title: "JavaScript Basics & ES6+ Features", duration: "25 min" },
+          {
+            id: 2,
+            title: "JavaScript Basics & ES6+ Features",
+            duration: "25 min",
+          },
           { id: 3, title: "Front-End Frameworks (React)", duration: "30 min" },
         ],
       },
       {
         sectionTitle: "Backend Development",
         lessons: [
-          { id: 4, title: "Server-Side Programming with Node.js", duration: "35 min" },
-          { id: 5, title: "Database Management (MongoDB & SQL)", duration: "40 min" },
+          {
+            id: 4,
+            title: "Server-Side Programming with Node.js",
+            duration: "35 min",
+          },
+          {
+            id: 5,
+            title: "Database Management (MongoDB & SQL)",
+            duration: "40 min",
+          },
           { id: 6, title: "REST API Development", duration: "45 min" },
           { id: 7, title: "Authentication & Security", duration: "30 min" },
         ],
@@ -161,7 +205,11 @@ export const courses = [
       {
         sectionTitle: "Deployment",
         lessons: [
-          { id: 8, title: "Cloud Deployment (Vercel/Heroku/AWS)", duration: "15 min" },
+          {
+            id: 8,
+            title: "Cloud Deployment (Vercel/Heroku/AWS)",
+            duration: "15 min",
+          },
         ],
       },
     ],
@@ -169,46 +217,66 @@ export const courses = [
 ];
 
 export const director = [
-    {
-      name: "GOLAGHA OGHENEVWEDE REGINA",
-      title: "CEO & Founder",
-      bio: " Molecular biologist with specialties in the application of bioinformatics for disease diagnosis. Research areas focuses on the application of genetically engineered nanoparticles or antibiotics delivery.",
-      image: "https://res.cloudinary.com/ddquednvr/image/upload/v1755359446/CEO.png",
-      linkedin: "#"
-    },
-    {
-      name: "AANUOLUWAPO ALAKE",
-      title: "CO-FOUNDER",
-      bio: "Investment banker specializing in edtech startups and growth strategies",
-      image: "https://res.cloudinary.com/ddquednvr/image/upload/v1755359492/cof1.png",
-      linkedin: "#"
-    },
-    {
-      name: "SUNMOLA ADEBOLA",
-      title: "CO-FOUNDER",
-      bio: "Education policy expert and former university administrator",
-      image: "https://res.cloudinary.com/ddquednvr/image/upload/v1755359489/cof2.png",
-      linkedin: "#"
-    },
-    {
-      name: "OKOROMA BRIGHT",
-      title: "ICT",
-      bio: "CFO with extensive experience in financial management for nonprofits",
-      image: "https://res.cloudinary.com/ddquednvr/image/upload/v1755359489/cit.png",
-      linkedin: "#"
-    }
-  ];
+  {
+    name: "GOLAGHA OGHENEVWEDE REGINA",
+    title: "CEO & Founder",
+    bio: " Molecular biologist with specialties in the application of bioinformatics for disease diagnosis. Research areas focuses on the application of genetically engineered nanoparticles or antibiotics delivery.",
+    image:
+      "https://res.cloudinary.com/ddquednvr/image/upload/v1755359446/CEO.png",
+    linkedin: "#",
+  },
+  {
+    name: "AANUOLUWAPO ALAKE",
+    title: "CO-FOUNDER",
+    bio: "Microbiologist, Molecular docking and Pharmacognosy enthusiast",
+    image:
+      "https://res.cloudinary.com/ddquednvr/image/upload/v1755359492/cof1.png",
+    linkedin: "#",
+  },
+  {
+    name: "SUNMOLA ADEBOLA",
+    title: "CO-FOUNDER",
+    bio: "Medical Microbiologist, Partner at African women in agricultural research and development (AWARD)",
+    image:
+      "https://res.cloudinary.com/ddquednvr/image/upload/v1755359489/cof2.png",
+    linkedin: "#",
+  },
+  {
+    name: "OKOROMA BRIGHT",
+    title: "ICT",
+    bio: "ICT personnel at Federal Medical center Abeokuta",
+    image:
+      "https://res.cloudinary.com/ddquednvr/image/upload/v1755359489/cit.png",
+    linkedin: "#",
+  },
+];
+export const Collaborators = [
+  {
+    name: "Oluwamuyiwa Agbi ",
+    title: "Computational scientist, currently undergoing cancer research",
+    image:
+      "https://res.cloudinary.com/ddquednvr/image/upload/v1761497086/gene_craft_002_wklpij.jpg",
+  },
+  {
+    name: "Temitayo Ogundimu ",
+    title: "Bioinformatician",
+    image:
+      "https://res.cloudinary.com/ddquednvr/image/upload/v1761497050/Gene_craft_00_cxlsc2.jpg",
+  
+  }
+ 
+];
 
-  export const partners = [
-    {
-        logo: "https://res.cloudinary.com/ddquednvr/image/upload/v1755360050/part1_kzodit.png",
-        name: "TOPLAHOLO BIOGEN",
-    },
-    {
-        logo: "https://res.cloudinary.com/ddquednvr/image/upload/v1755360044/part2_uddh48.png",
-        name: "LECTURE HUB",
-    },
-    // Add more partners as needed
+export const partners = [
+  {
+    logo: "https://res.cloudinary.com/ddquednvr/image/upload/v1755360050/part1_kzodit.png",
+    name: "TOPLAHOLO BIOGEN",
+  },
+  {
+    logo: "https://res.cloudinary.com/ddquednvr/image/upload/v1755360044/part2_uddh48.png",
+    name: "LECTURE HUB",
+  },
+  // Add more partners as needed
 ];
 export const featuredCourses = [
   {
@@ -218,14 +286,17 @@ export const featuredCourses = [
     reviews: 220,
     students: 1500,
     duration: "3:30 hr",
-    description: "Explore AI concepts, machine learning algorithms, and build intelligent applications.",
-    image: "https://media.istockphoto.com/id/1234567890/photo/ai-concept.jpg?s=612x612&w=0&k=20&c=someimagehash=",
+    description:
+      "Explore AI concepts, machine learning algorithms, and build intelligent applications.",
+    image:
+      "https://media.istockphoto.com/id/1234567890/photo/ai-concept.jpg?s=612x612&w=0&k=20&c=someimagehash=",
     difficulty: "Intermediate",
     price: 69.99,
     originalPrice: 90,
     instructor: {
       name: "Sophia",
-      avatar: "https://media.istockphoto.com/id/987654321/photo/instructor.jpg?s=612x612&w=0&k=20&c=anotherhash=",
+      avatar:
+        "https://media.istockphoto.com/id/987654321/photo/instructor.jpg?s=612x612&w=0&k=20&c=anotherhash=",
     },
     category: "tech",
     learningOutcomes: [
@@ -291,7 +362,11 @@ export const featuredCourses = [
       {
         sectionTitle: "AWS Fundamentals",
         lessons: [
-          { id: 1, title: "Introduction to Cloud Computing", duration: "20 min" },
+          {
+            id: 1,
+            title: "Introduction to Cloud Computing",
+            duration: "20 min",
+          },
           { id: 2, title: "AWS Core Services Overview", duration: "25 min" },
           { id: 3, title: "IAM and Security Basics", duration: "30 min" },
         ],
@@ -301,15 +376,31 @@ export const featuredCourses = [
         lessons: [
           { id: 4, title: "EC2 and Compute Services", duration: "35 min" },
           { id: 5, title: "S3 and Storage Solutions", duration: "30 min" },
-          { id: 6, title: "Database Services (RDS, DynamoDB)", duration: "40 min" },
+          {
+            id: 6,
+            title: "Database Services (RDS, DynamoDB)",
+            duration: "40 min",
+          },
         ],
       },
       {
         sectionTitle: "Deployment & Management",
         lessons: [
-          { id: 7, title: "CloudFormation & Infrastructure as Code", duration: "30 min" },
-          { id: 8, title: "Monitoring & Scaling Applications", duration: "35 min" },
-          { id: 9, title: "Cost Management & Optimization", duration: "20 min" },
+          {
+            id: 7,
+            title: "CloudFormation & Infrastructure as Code",
+            duration: "30 min",
+          },
+          {
+            id: 8,
+            title: "Monitoring & Scaling Applications",
+            duration: "35 min",
+          },
+          {
+            id: 9,
+            title: "Cost Management & Optimization",
+            duration: "20 min",
+          },
         ],
       },
     ],
@@ -320,64 +411,94 @@ export const testimonials = [
     name: "Aisha Eniola Olayiwola",
     role: "Student",
     rating: 4.5,
-    feedback: "Participating in the Hands-on Training in Microbial Genomics Data Analysis was a pivotal experience, providing practical skills in genomic databases, sequence assembly, annotation, comparative genomics, and phylogenetic analysis. The drug design module broadened understanding of bioinformatics in therapeutic discovery, while mentorship and scientific writing training enhanced research communication. Overall, the programme built both competence and confidence to contribute meaningfully to microbial genomics and related fields.",
-    avatar: "https://res.cloudinary.com/ddquednvr/image/upload/v1758524124/Img1.jpg",
-    course: "Microbial Genomics"
+    feedback:
+      "Participating in the Hands-on Training in Microbial Genomics Data Analysis was a pivotal experience, providing practical skills in genomic databases, sequence assembly, annotation, comparative genomics, and phylogenetic analysis. The drug design module broadened understanding of bioinformatics in therapeutic discovery, while mentorship and scientific writing training enhanced research communication. Overall, the programme built both competence and confidence to contribute meaningfully to microbial genomics and related fields.",
+    avatar:
+      "https://res.cloudinary.com/ddquednvr/image/upload/v1758524124/Img1.jpg",
+    course: "Microbial Genomics",
   },
   {
     name: "Michael Smith",
     role: "Student",
     rating: 4.2,
-    feedback: "This training was a great experience, as I gained practical skills in key areas such as Fundamentals of Microbial Genomics and Molecular Techniques, Comparative Genomics and Phylogenetics, and Functional Genomics and RNA Sequence Analysis. It also sharpened my ability to effectively work with bioinformatics tools.",
-    avatar: "https://res.cloudinary.com/ddquednvr/image/upload/v1758524125/Img2.jpg",
-    course: "Microbial Genomics"
+    feedback:
+      "This training was a great experience, as I gained practical skills in key areas such as Fundamentals of Microbial Genomics and Molecular Techniques, Comparative Genomics and Phylogenetics, and Functional Genomics and RNA Sequence Analysis. It also sharpened my ability to effectively work with bioinformatics tools.",
+    avatar:
+      "https://res.cloudinary.com/ddquednvr/image/upload/v1758524125/Img2.jpg",
+    course: "Microbial Genomics",
   },
   {
     name: "Princess Ijeoma",
     role: "Student",
     rating: 3.4,
-    feedback: "My time at Gene Craft Microbial Academy was truly transformative. Over five months, I gained hands-on experience in microbial genomics, molecular techniques, functional and comparative genomics, and computer-aided drug design. What made the journey special was the supportive mentors and collaborative projects that turned learning into an inspiring experience. I am truly grateful to the organizers, facilitators and partners of the academy 😇🙏",
-    avatar: "    https://res.cloudinary.com/ddquednvr/image/upload/v1758524124/Img3.jpg",
-    course: "Microbial Genomics"
+    feedback:
+      "My time at Gene Craft Microbial Academy was truly transformative. Over five months, I gained hands-on experience in microbial genomics, molecular techniques, functional and comparative genomics, and computer-aided drug design. What made the journey special was the supportive mentors and collaborative projects that turned learning into an inspiring experience. I am truly grateful to the organizers, facilitators and partners of the academy 😇🙏",
+    avatar:
+      "    https://res.cloudinary.com/ddquednvr/image/upload/v1758524124/Img3.jpg",
+    course: "Microbial Genomics",
   },
   {
     name: "Abubakar Lawal Shehu ",
     role: "Student",
     rating: 4.8,
-    feedback: "This program transformed my approach to microbial research, equipping me with practical knowledge, innovative tools, and a renewed passion for scientific discovery.",
-    avatar: " https://res.cloudinary.com/ddquednvr/image/upload/v1758524125/Img4.jpg",
-    course: "Microbial Genomics"
+    feedback:
+      "This program transformed my approach to microbial research, equipping me with practical knowledge, innovative tools, and a renewed passion for scientific discovery.",
+    avatar:
+      " https://res.cloudinary.com/ddquednvr/image/upload/v1758524125/Img4.jpg",
+    course: "Microbial Genomics",
   },
   {
     name: "Emily Davis",
     role: "Student",
     rating: 4.6,
-    feedback: "The past five months have been enriching, and it's all thanks to the Gene Craft Academy.Beyond expanding my theoretical knowledge as a microbiologist, I’ve gained hands-on experience with computational tools used in drug testing and learned how to leverage technology to design innovative medical interventions.This wasn’t just a training program for me, it was true empowerment!",
-    avatar: "https://res.cloudinary.com/ddquednvr/image/upload/v1758524125/Img5.jpg",
-    course: "Microbial Genomics"
+    feedback:
+      "The past five months have been enriching, and it's all thanks to the Gene Craft Academy.Beyond expanding my theoretical knowledge as a microbiologist, I’ve gained hands-on experience with computational tools used in drug testing and learned how to leverage technology to design innovative medical interventions.This wasn’t just a training program for me, it was true empowerment!",
+    avatar:
+      "https://res.cloudinary.com/ddquednvr/image/upload/v1758524125/Img5.jpg",
+    course: "Microbial Genomics",
   },
   {
     name: "Abdulrahman Olamilekan Raji",
     role: "Student",
     rating: 4.3,
-    feedback: "My five-month internship at Genecraft Academy was a truly transformative experience, offering a judicious blend of rigorous hands-on training and incisive theoretical sessions. The program’s emphasis on computer-aided drug discovery and bioinformatics techniques, supported by exceptional mentorship and structured resources, rendered complex concepts both lucid and intellectually stimulating. This immersive experience has fortified my technical acumen and deepened my passion for computational drug discovery, positioning me for excellence in future academic and research endeavors.",
-    avatar: "https://res.cloudinary.com/ddquednvr/image/upload/v1758524125/Img6.jpg",
-    course: "Microbial Genomics"
+    feedback:
+      "My five-month internship at Genecraft Academy was a truly transformative experience, offering a judicious blend of rigorous hands-on training and incisive theoretical sessions. The program’s emphasis on computer-aided drug discovery and bioinformatics techniques, supported by exceptional mentorship and structured resources, rendered complex concepts both lucid and intellectually stimulating. This immersive experience has fortified my technical acumen and deepened my passion for computational drug discovery, positioning me for excellence in future academic and research endeavors.",
+    avatar:
+      "https://res.cloudinary.com/ddquednvr/image/upload/v1758524125/Img6.jpg",
+    course: "Microbial Genomics",
   },
   {
     name: "Olivia Martinez",
     role: "Student",
     rating: 4.9,
-    feedback: "Through the Gene Craft Academy's mentorship program, I have significantly upgraded my bioinformatics skills. During my internship, I gained hands-on experience in network pharmacology, including ligand prediction and protein-protein interaction analysis using Cytoscape. Additionally, I utilized Galaxy software for genomic annotation and functional gene analysis, further expanding my skills in computer-aided drug design. This opportunity not only enhanced my knowledge but also enabled me to conceptualize manuscripts on in silico studies and bioinformatics analysis. Working alongside young researchers, I have learned, unlearned, and relearned, fostering growth and collaboration. I appreciate the mentorship provided by Gene Craft Academy, a hub for knowledge in genetic studies using computational techniques.",
-    avatar: "https://res.cloudinary.com/ddquednvr/image/upload/v1758524125/Img7.jpg",
-    course: "Microbial Genomics"
+    feedback:
+      "Through the Gene Craft Academy's mentorship program, I have significantly upgraded my bioinformatics skills. During my internship, I gained hands-on experience in network pharmacology, including ligand prediction and protein-protein interaction analysis using Cytoscape. Additionally, I utilized Galaxy software for genomic annotation and functional gene analysis, further expanding my skills in computer-aided drug design. This opportunity not only enhanced my knowledge but also enabled me to conceptualize manuscripts on in silico studies and bioinformatics analysis. Working alongside young researchers, I have learned, unlearned, and relearned, fostering growth and collaboration. I appreciate the mentorship provided by Gene Craft Academy, a hub for knowledge in genetic studies using computational techniques.",
+    avatar:
+      "https://res.cloudinary.com/ddquednvr/image/upload/v1758524125/Img7.jpg",
+    course: "Microbial Genomics",
   },
   {
     name: "Ryan Thompson",
     role: "Student",
     rating: 4.7,
-    feedback: "Gene Craft taught me a lot about in-silico analysis, and the hands-on project was my favorite part. The training was practical, engaging, and gave me real skills I can apply in my research. I’m truly grateful for the experience.",
-    avatar: "https://res.cloudinary.com/ddquednvr/image/upload/v1758524126/Img8.jpg",
-    course: "Microbial Genomics"
-  }
+    feedback:
+      "Gene Craft taught me a lot about in-silico analysis, and the hands-on project was my favorite part. The training was practical, engaging, and gave me real skills I can apply in my research. I’m truly grateful for the experience.",
+    avatar:
+      "https://res.cloudinary.com/ddquednvr/image/upload/v1758524126/Img8.jpg",
+    course: "Microbial Genomics",
+  },
+];
+
+export const social = [
+  {
+    name: "facebook",
+    link: "https://www.facebook.com/share/1SyyU9BtRa/?mibextid=qi2Omg",
+    img:"/icons/icons8-facebook-logo.svg"
+  },
+  {
+    name: "linkedin",
+    link: "https://www.linkedin.com/company/gene-craft/",
+    img:"/icons/icons8-linkedin.svg"
+  },
+  
 ];

@@ -215,26 +215,6 @@ export default function FeaturedCourses() {
             </svg>
           </Link>
         </div>
-
-        {/* Stats Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-10 border-t border-[#f9b7dd]/30">
-          <div className="text-center">
-            <div className="text-3xl font-bold text-[#74377a] dark:text-[#f9b7dd]">50+</div>
-            <div className="text-gray-600 dark:text-gray-300">Courses</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-[#74377a] dark:text-[#f9b7dd]">10K+</div>
-            <div className="text-gray-600 dark:text-gray-300">Students</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-[#74377a] dark:text-[#f9b7dd]">25+</div>
-            <div className="text-gray-600 dark:text-gray-300">Instructors</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold text-[#74377a] dark:text-[#f9b7dd]">98%</div>
-            <div className="text-gray-600 dark:text-gray-300">Satisfaction</div>
-          </div>
-        </div>
       </div>
     </section>
   );
