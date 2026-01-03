@@ -5,7 +5,7 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { doc, setDoc, serverTimestamp } from "firebase/firestore";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import { FcPrevious } from "react-icons/fc";
 export default function Signup() {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({ 
@@ -106,13 +106,21 @@ export default function Signup() {
     } finally {
       setLoading(false);
     }
-  };
 
+   
+  };
+ const Previous = () => {
+      navigate('/');}
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
       <ToastContainer position="top-right" autoClose={5000} theme="light" />
       
       <div className="w-full max-w-6xl bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row">
+        <FcPrevious 
+    onClick={Previous}
+    className="cursor-pointer hover:scale-110 transition-all duration-200"
+    size={24}
+  />
         {/* Left Column - Form */}
         <div className="w-full md:w-1/2 p-8">
           <div className="text-center mb-8">

@@ -5,6 +5,7 @@ import { collection, query, where, getDocs } from "firebase/firestore";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Logout } from '../../../auth';
+import { MdOutlinePayments } from "react-icons/md";
 import { 
   FiHome, 
   FiBook, 
@@ -53,6 +54,11 @@ export default function Sidebar() {
       name: "Settings", 
       path: "/admin/settings", 
       icon: <FiSettings className="w-5 h-5" />
+    },
+    { 
+      name: "Tractions", 
+      path: "/admin/transactions", 
+      icon: <MdOutlinePayments className="w-5 h-5" />
     },
     { 
       name: "Logout", 

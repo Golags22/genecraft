@@ -54,6 +54,78 @@ export default function Gallery() {
       image: 'https://res.cloudinary.com/ddquednvr/image/upload/v1761498981/IMG-20250507-WA0004_rkrs9e.jpg',
    
     },
+    {
+      id: 6,
+      type: 'image',
+      category: 'labwork',
+      title: 'CRISPR Technology Demo',
+      description: 'Demonstrating gene editing techniques',
+      image: 'https://res.cloudinary.com/ddquednvr/image/upload/v1762016710/screenshot_2025-07-01-17-40-53-76_2ef548bf47261a0f379d52645eb41568_cmqcru.jpg',
+   
+    },
+    {
+      id: 7,
+      type: 'image',
+      category: 'labwork',
+      title: 'CRISPR Technology Demo',
+      description: 'Demonstrating gene editing techniques',
+      image: 'https://res.cloudinary.com/ddquednvr/image/upload/v1762016709/Screenshot_2025-05-30-20-01-05-17_ef634ab0a744fd035b88627414f28d5e_mhxvvq.jpg',
+   
+    },
+    {
+      id: 8,
+      type: 'image',
+      category: 'labwork',
+      title: 'CRISPR Technology Demo',
+      description: 'Demonstrating gene editing techniques',
+      image: 'https://res.cloudinary.com/ddquednvr/image/upload/v1762016709/Screenshot_2025-07-15-18-40-54-78_2ef548bf47261a0f379d52645eb41568_fwknzy.jpg',
+   
+    },
+    {
+      id: 9,
+      type: 'image',
+      category: 'labwork',
+      title: 'CRISPR Technology Demo',
+      description: 'Demonstrating gene editing techniques',
+      image: 'https://res.cloudinary.com/ddquednvr/image/upload/v1762016709/Screenshot_2025-07-01-18-02-38-36_2ef548bf47261a0f379d52645eb41568_te4x28.jpg',
+   
+    },
+    {
+      id: 10,
+      type: 'image',
+      category: 'labwork',
+      title: 'CRISPR Technology Demo',
+      description: 'Demonstrating gene editing techniques',
+      image: 'https://res.cloudinary.com/ddquednvr/image/upload/v1762016709/Screenshot_2025-07-01-18-46-19-83_2ef548bf47261a0f379d52645eb41568_nll3tz.jpg',
+   
+    },
+    {
+      id: 11,
+      type: 'image',
+      category: 'labwork',
+      title: 'CRISPR Technology Demo',
+      description: 'Demonstrating gene editing techniques',
+      image: 'https://res.cloudinary.com/ddquednvr/image/upload/v1762016709/Screenshot_2025-07-01-18-46-19-83_2ef548bf47261a0f379d52645eb41568_nll3tz.jpg',
+   
+    },
+    {
+      id: 12,
+      type: 'image',
+      category: 'labwork',
+      title: 'CRISPR Technology Demo',
+      description: 'Demonstrating gene editing techniques',
+      image: 'https://res.cloudinary.com/ddquednvr/image/upload/v1762016709/Screenshot_2025-07-15-17-12-54-42_2ef548bf47261a0f379d52645eb41568_oulc2f.jpg',
+   
+    },
+    {
+      id: 13,
+      type: 'image',
+      category: 'labwork',
+      title: 'CRISPR Technology Demo',
+      description: 'Demonstrating gene editing techniques',
+      image: 'https://res.cloudinary.com/ddquednvr/image/upload/v1762016711/Screenshot_2025-07-01-17-07-31-58_2ef548bf47261a0f379d52645eb41568_ufaq4q.jpg',
+   
+    },
   ];
 
   const categories = [

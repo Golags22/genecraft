@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function CourseCard({ course }) {
   return (
+    <Link to={course.url} className="block">
     <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
       <div className="relative pb-48 overflow-hidden">
         <img 
@@ -22,6 +23,10 @@ export default function CourseCard({ course }) {
           </span>
         </div>
       </div>
+      // Here is the video section
+      <video src={course.video} 
+      controls
+      >{course.video}</video>
       <div className="p-6">
         <div className="flex items-center justify-between mb-2">
           <span className="text-sm text-gray-500 dark:text-gray-400">{course.category}</span>
@@ -63,5 +68,6 @@ export default function CourseCard({ course }) {
         </div>
       </div>
     </div>
+    </Link>
   );
 }

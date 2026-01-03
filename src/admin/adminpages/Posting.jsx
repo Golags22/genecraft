@@ -19,6 +19,7 @@ export default function Posting() {
       avatar: "",
     },
     image: "",
+    video: "",
     learningOutcomes: [""],
     curriculum: [
       {
@@ -163,6 +164,7 @@ export default function Posting() {
           avatar: "",
         },
         image: "",
+        video: "",
         learningOutcomes: [""],
         curriculum: [
           {
@@ -185,9 +187,8 @@ export default function Posting() {
     }
   };
 
-  const categories = [
-    "Technology", "Business", "Design", "Marketing", 
-    "Development", "Data Science", "Photography", "Music", "Med"
+  const categories = [ 
+    "Medical",
   ];
 
   const difficulties = ["Beginner", "Intermediate", "Advanced"];
@@ -329,6 +330,20 @@ export default function Posting() {
                     value={courseData.image}
                     onChange={handleChange}
                     placeholder="https://example.com/image.jpg"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                    required
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Course Video URL *
+                  </label>
+                  <input
+                    type="url"
+                    name="video"
+                    value={courseData.video}
+                    onChange={handleChange}
+                    placeholder="https://example.com/video.jpg"
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
                     required
                   />

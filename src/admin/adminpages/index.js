@@ -12,7 +12,8 @@ import ViewResource from './ViewResource';
 import DeleteResource from './DeleteResource';
 import CourseDetail from './CourseDetail';
 import AdminProfile from './AdminProfile';
+import Transaction from './Transaction';
 
 export{
-Sidebar,CourseTable,Stats,Users,AdminResources,Settings,Posting,AddResource,EditResource,ViewResource,DeleteResource,CourseDetail,AdminProfile
+Sidebar,CourseTable,Stats,Users,AdminResources,Settings,Posting,AddResource,EditResource,ViewResource,DeleteResource,CourseDetail,AdminProfile,Transaction
 }

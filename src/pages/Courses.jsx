@@ -7,7 +7,8 @@ export default function Courses() {
   const [activeCategory, setActiveCategory] = useState('All');
   const [courses, setCourses] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-
+  
+//fetching courses from firebase
   useEffect(() => {
     const fetchCourses = async () => {
       setIsLoading(true);

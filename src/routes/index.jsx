@@ -6,7 +6,7 @@ import Gallery from '../pages/Gallery';
 import MainLayout from '../layouts/MainLayout';
 import AdminDashboard from '../admin/AdminDashboard';
 import CourseDetails from '../pages/CourseDetails';
-import { CourseTable, Stats, Users,AdminResources, Settings, Posting, ViewResource, EditResource, AddResource, DeleteResource, CourseDetail } from '../admin/adminpages';
+import { CourseTable, Stats, Users,AdminResources, Settings, Posting, ViewResource, EditResource, AddResource, DeleteResource, CourseDetail, Transaction } from '../admin/adminpages';
 import { Login, Logout, Signup } from '../../auth';
 import StudentDashboard from '../users/StudentDashboard';
 
@@ -27,7 +27,9 @@ export const routes = [
   { path: "/admin/resources", element:<AdminResources />, showInNav: false },
   { path: "/admin/settings", element: <Settings />, showInNav: false },
   {path:  "/admin/resources" , element:<AdminResources /> ,showInNav: false },
- { path:"/admin/resources/add" , element:<AddResource /> ,showInNav: false},
+ 
+  {path:  "/admin/resources" , element:<AdminResources /> ,showInNav: false },
+ { path:"/admin/transaction" , element: <Transaction /> ,showInNav: false},
   {path:"/admin/resources/edit/:id" , element:<EditResource /> ,showInNav: false},
   {path:"/admin/resources/delete/:id" , element:<DeleteResource /> ,showInNav: false},
   {path:"/admin/resources/view/:id" , element:<ViewResource /> ,showInNav: false},
