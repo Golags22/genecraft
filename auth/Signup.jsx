@@ -78,8 +78,8 @@ export default function Signup() {
         email: formData.email,
         role: "student",
         status: "active",
-        coursesEnrolled: [],
-        progress: {},
+        // coursesEnrolled: [],
+        // progress: {},
         createdAt: serverTimestamp(),
         lastActive: serverTimestamp()
       });
