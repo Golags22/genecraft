@@ -220,7 +220,7 @@ export const director = [
   {
     name: "GOLAGHA OGHENEVWEDE REGINA",
     title: "CEO & Founder",
-    bio: " Molecular biologist with specialties in the application of bioinformatics for disease diagnosis. Research areas focuses on the application of genetically engineered nanoparticles or antibiotics delivery.",
+    bio: "Golagha Regina is a Molecular Scientist and the founder of Genecraft Microbial Genomics Academy, an initiative dedicated to making practical, accessible training in computational biology and microbial research available to students and young scientists across Nigeria.Her research focuses on the role of microbial communities in human health and disease, with particular interest in how gut microbial imbalance contributes to chronic inflammation and disease progression through the gut-liver axis. She also has experience in antimicrobial resistance studies and the characterization of clinically relevant microorganisms.Through Genecraft, she is passionate about equipping the next generation of scientists with hands-on skills in data-driven biological research, bridging the gap between theoretical knowledge and real-world application. Her work is driven by a commitment to advancing scientific capacity and improving research accessibility.",
     image:
       "https://res.cloudinary.com/ddquednvr/image/upload/v1755359446/CEO.png",
     linkedin: "#",
@@ -241,14 +241,7 @@ export const director = [
       "https://res.cloudinary.com/ddquednvr/image/upload/v1755359489/cof2.png",
     linkedin: "#",
   },
-  {
-    name: "OKOROMA BRIGHT",
-    title: "ICT",
-    bio: "ICT personnel at Federal Medical center Abeokuta",
-    image:
-      "https://res.cloudinary.com/ddquednvr/image/upload/v1755359489/cit.png",
-    linkedin: "#",
-  },
+
 ];
 export const Collaborators = [
   {
@@ -499,6 +492,11 @@ export const social = [
     name: "linkedin",
     link: "https://www.linkedin.com/company/gene-craft/",
     img:"/icons/icons8-linkedin.svg"
+  },
+  {
+    name: "linkedin",
+    link: "https://www.youtube.com/@Genecraft-MA",
+    img:"/icons/icons8-youtube.svg"
   },
   
 ];

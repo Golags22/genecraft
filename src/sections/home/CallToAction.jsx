@@ -15,7 +15,7 @@ export default function CallToAction() {
         </h2>
         
         <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90">
-          Join <span className="font-semibold">thousands of students</span> upgrading their skills with our platform.
+          Join <span className="font-semibold"> a growing community of learners upgrade their </span>bioinformatics skills with our platform
         </p>
         
         <div className="flex flex-col sm:flex-row justify-center gap-4">

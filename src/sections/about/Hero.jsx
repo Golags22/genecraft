@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { FiBook, FiUsers, FiAward, FiStar, FiArrowRight, FiPlay, FiChevronDown } from "react-icons/fi";
+import { FiBook, FiUsers, FiAward, FiStar, FiArrowRight, FiPlay } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
 export default function Hero() {
@@ -8,149 +8,182 @@ export default function Hero() {
 
   useEffect(() => {
     setIsVisible(true);
-    
-    // Animate stats counter
     const statInterval = setInterval(() => {
-      setCurrentStat(prev => (prev + 1) % 4);
+      setCurrentStat((prev) => (prev + 1) % 4);
     }, 2000);
-
     return () => clearInterval(statInterval);
   }, []);
 
   const stats = [
-    { icon: <FiUsers className="w-6 h-6" />, number: "2,500+", label: "Students Enrolled" },
-    { icon: <FiBook className="w-6 h-6" />, number: "50+", label: "Courses Available" },
-    { icon: <FiAward className="w-6 h-6" />, number: "98%", label: "Success Rate" },
+    { icon: <FiUsers className="w-6 h-6" />, number: "30+", label: "Students Trained" },
+    { icon: <FiBook className="w-6 h-6" />, number: "3+", label: "Courses Available" },
+    { icon: <FiAward  className="w-6 h-6" />, number: "3+", label: "Cohort Delivered" },
     { icon: <FiStar className="w-6 h-6" />, number: "4.9/5", label: "Student Rating" }
   ];
 
+  const areas = [
+    {
+      number: "1.",
+      title: "Gene Annotation and Prediction",
+      subtitle: "Where are the genes, and what do they do?",
+      details: "Learn to identify genes in new genomes and assign functions using ab initio prediction with GALAXY workflow homology-based annotation with BLAST and functional annotation with InterProScan."
+    },
+    {
+      number: "2.",
+      title: "Functional Genomics",
+      subtitle: "What do genes actually do?_",
+      details: "Run RNA-Seq analysis to find differentially expressed genes, ChIP-Seq analysis to map transcription factor binding, and pathway enrichment using KEGG/GO to interpret biological function."
+    },
+    {
+      number: "3.",
+      title: "Comparative Genomics",
+      subtitle: "How do genomes differ across species or strains?",
+      details: "Perform whole-genome alignment to spot virulence factors, ortholog detection across humans and other mammals and phylogenetics to build evolutionary trees and track pathogen spread."
+    },
+    {
+      number: "4.",
+      title: "Computer-Aided Drug Design (CADD)",
+      subtitle: "Can we predict which molecules will bind a target protein?",
+      details: "Conduct molecular docking of plant compounds against malaria proteins with AutoDock, virtual screening with ADMET filtering, and target identification from genomics data to find drug targets in pathogens."
+    }
+  ];
+
   return (
-    <section 
-      className="relative text-white py-20 md:py-28 lg:py-32 overflow-hidden min-h-screen flex items-center bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: 'url(https://res.cloudinary.com/ddquednvr/image/upload/v1761497914/cert)'
-      }}
-    >
-      {/* Dark overlay for better text readability */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#74377a]/80 via-[#8a4a8f]/70 to-[#f9b7dd]/60"></div>
-      
-      {/* Additional gradient overlay for depth */}
-      <div className="absolute inset-0 bg-gradient-to-t from-[#74377a]/40 to-transparent"></div>
+    <div>
+      {/* ===== HERO SECTION ===== */}
+      <section className="relative text-white py-20 md:py-28 lg:py-32 overflow-hidden min-h-screen flex items-center">
+        {/* Background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#74377a] via-[#8a4a8f] to-[#74377a]"></div>
 
-      {/* Animated background elements */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-10 left-10 w-72 h-72 rounded-full bg-white/10 animate-pulse"></div>
-        <div className="absolute bottom-20 right-20 w-96 h-96 rounded-full bg-white/5 animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-white/10 animate-pulse delay-2000"></div>
-      </div>
-
-      {/* Geometric patterns */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-40 right-40 w-32 h-32 border-4 border-white/10 rounded-lg rotate-45 animate-float"></div>
-        <div className="absolute bottom-60 left-40 w-24 h-24 border-2 border-white/10 rounded-full animate-float delay-1000"></div>
-        <div className="absolute top-60 left-20 w-16 h-16 border-4 border-white/10 rotate-12 animate-float delay-1500"></div>
-      </div>
-
-      {/* Floating particles */}
-      <div className="absolute inset-0">
-        {[...Array(25)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute w-1.5 h-1.5 bg-white/40 rounded-full animate-float"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 5}s`,
-              animationDuration: `${4 + Math.random() * 3}s`
-            }}
-          />
-        ))}
-      </div>
-
-      {/* Main content */}
-      <div className="container mx-auto px-6 text-center relative z-10">
-        {/* Badge */}
-        <div className={`inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-8 transition-all duration-700 delay-100 ${
-          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-        }`}>
-          <FiAward className="w-4 h-4 mr-2 text-[#f9b7dd]" />
-          <span className="text-sm font-semibold">CAMA Registered Institute</span>
+        {/* Floating elements */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 left-10 w-72 h-72 rounded-full bg-white animate-pulse"></div>
+          <div className="absolute bottom-20 right-20 w-96 h-96 rounded-full bg-white animate-pulse" style={{ animationDelay: "1s" }}></div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-white animate-pulse" style={{ animationDelay: "2s" }}></div>
         </div>
 
-        {/* Main heading with animation */}
-        <h1 className={`text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight transition-all duration-700 ${
-          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-        }`}>
-          Transform Your Future with{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-[#f9b7dd] relative">
-            Gene-Craft
-            <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-white to-[#f9b7dd] rounded-full"></div>
-          </span>
-        </h1>
-        
-        {/* Description */}
-        <p className="text-xl md:text-2xl lg:text-3xl mx-auto mb-12 max-w-6xl leading-relaxed transition-all duration-700 delay-100 ${
-          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-        }">
-          Bridging the knowledge gap in{" "}
-          <span className="font-semibold text-[#f9b7dd]">microbial genomics</span> across Africa through 
-          expert-led education and cutting-edge research.
-        </p>
+        {/* Particles */}
+        <div className="absolute inset-0">
+          {[...Array(15)].map((_, i) => (
+            <div
+              key={i}
+              className="absolute w-1 h-1 bg-white/30 rounded-full animate-bounce"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 5}s`,
+                animationDuration: `${3 + Math.random() * 4}s`
+              }}
+            />
+          ))}
+        </div>
 
-        {/* Enhanced CTA buttons */}
-        <div className={`flex flex-col sm:flex-row justify-center gap-6 mb-16 transition-all duration-700 delay-200 ${
-          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-        }`}>
-          <Link 
-            to="/courses"
-            className="group px-10 py-5 bg-white text-[#74377a] rounded-2xl font-bold hover:bg-[#f9b7dd] transition-all duration-300 hover:scale-105 shadow-2xl hover:shadow-3xl flex items-center justify-center transform hover:-translate-y-1"
+        {/* Content */}
+        <div className="container mx-auto px-6 text-center relative z-10">
+          <h1
+            className={`text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight transition-all duration-700 ${
+              isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+            }`}
           >
-            <span className="relative z-10">Explore Courses</span>
-            <FiArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform" />
-            <div className="absolute inset-0 bg-gradient-to-r from-white to-[#f9b7dd] rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          </Link>
-          
-          <button className="group px-10 py-5 bg-transparent border-3 border-white text-white rounded-2xl font-bold hover:bg-white/10 transition-all duration-300 hover:scale-105 backdrop-blur-sm flex items-center justify-center transform hover:-translate-y-1 shadow-xl">
-            <FiPlay className="w-6 h-6 mr-3 group-hover:scale-110 transition-transform" />
-            <span>How It Works</span>
-          </button>
+            What we offer
+          </h1>
+
+          <p
+            className={`text-lg md:text-xl lg:text-2xl mx-auto mb-10 max-w-5xl leading-relaxed transition-all duration-700 delay-100 ${
+              isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+            }`}
+          >
+            A 3-month online training program in genomic data analysis that gives individuals in the field of biological sciences the practical experiences in using various bioinformatics tools and resources for research and employability.           </p>
+
+          {/* CTA Buttons */}
+          <div
+            className={`flex flex-col sm:flex-row justify-center gap-5 mb-16 transition-all duration-700 delay-200 ${
+              isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+            }`}
+          >
+            <Link
+              to="/courses"
+              className="group px-8 py-4 bg-white text-[#74377a] rounded-xl font-bold hover:bg-pink-100 transition-all duration-300 hover:scale-105 shadow-xl flex items-center justify-center"
+            >
+              Explore Courses
+              <FiArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+            </Link>
+<a href="#howitwork">
+            <button
+            className="group px-8 py-4 bg-transparent border-2 border-white text-white rounded-xl font-bold hover:bg-white/10 transition-all duration-300 hover:scale-105 flex items-center justify-center">
+              <FiPlay className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
+              How It Works
+            </button>
+            </a>
+          </div>
+
+          {/* Stats */}
+          <div
+            className={`grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto transition-all duration-700 delay-300 ${
+              isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+            }`}
+          >
+            {stats.map((stat, index) => (
+              <div
+                key={index}
+                className={`p-4 rounded-xl backdrop-blur-sm transition-all duration-300 ${
+                  currentStat === index ? "bg-white/20 scale-105 shadow-lg" : "bg-white/10"
+                }`}
+              >
+                <div className="flex justify-center mb-2">{stat.icon}</div>
+                <div className="text-2xl font-bold">{stat.number}</div>
+                <div className="text-sm opacity-80">{stat.label}</div>
+              </div>
+            ))}
+          </div>
         </div>
 
-      
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center pt-2">
+            <div className="w-1.5 h-3 bg-white/70 rounded-full animate-pulse"></div>
+          </div>
+        </div>
+      </section>
 
-      </div>
+      {/* ===== WHAT WE OFFER SECTION ===== */}
+      <section 
+    
+      className="max-w-5xl mx-auto px-6 py-20">
+        <div className="mb-12">
+          <span className="block w-10 h-1 bg-[#74377a] rounded-sm mb-4"></span>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight mb-3">
+            Core Areas
+          </h2>
+          <p className="text-lg text-gray-500">
+            You'll master hands-on analysis in any of these core areas:
+          </p>
+        </div>
 
-      {/* Custom animations */}
-      <style jsx global>{`
-        @keyframes float {
-          0%, 100% {
-            transform: translateY(0px) rotate(0deg);
-          }
-          33% {
-            transform: translateY(-15px) rotate(3deg);
-          }
-          66% {
-            transform: translateY(-8px) rotate(-2deg);
-          }
-        }
-        
-        .animate-float {
-          animation: float 6s ease-in-out infinite;
-        }
-
-        @keyframes pulse-glow {
-          0%, 100% {
-            box-shadow: 0 0 20px rgba(249, 183, 221, 0.3);
-          }
-          50% {
-            box-shadow: 0 0 40px rgba(249, 183, 221, 0.6);
-          }
-        }
-
-        .animate-pulse-glow {
-          animation: pulse-glow 2s ease-in-out infinite;
-        }
-      `}</style>
-    </section>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          {areas.map((area, index) => (
+            <div
+              key={index}
+              className="flex gap-5 p-6 bg-white rounded-xl border border-purple-100 hover:shadow-lg hover:shadow-[#74377a]/10 hover:-translate-y-0.5 transition-all duration-200 group"
+            >
+              <span className="text-lg font-bold text-[#74377a] bg-purple-50 px-3 py-1 rounded-lg h-fit flex-shrink-0">
+                {area.number}
+              </span>
+              <div className="flex-1 min-w-0">
+                <h3 className="text-lg font-semibold text-gray-900 mb-1.5">
+                  {area.title}
+                </h3>
+                <p className="text-sm italic text-[#74377a] font-medium mb-2.5">
+                  {area.subtitle}
+                </p>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  {area.details}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 }

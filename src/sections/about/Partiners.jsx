@@ -5,7 +5,7 @@ export default function Partners() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slidesToShow = 4; // Adjust based on your responsive needs
 
-  // Auto-rotate partners
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % partners.length);
@@ -23,9 +23,7 @@ export default function Partners() {
               <span className="absolute top-12 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-cyan-400 transform -translate-y-2"></span>
             </span>
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Collaborating with leading organizations to advance microbial genomics education
-          </p>
+         
         </div>
 
         {/* Partners Carousel */}
@@ -44,7 +42,7 @@ export default function Partners() {
                   <img 
                     src={partner.logo} 
                     alt={partner.name} 
-                    className="h-16 object-contain mb-4 grayscale hover:grayscale-0 transition-all duration-300"
+                    className="h-16 object-contain mb-4"
                   />
                   <h3 className="text-lg font-medium text-center text-gray-800 dark:text-gray-200">
                     {partner.name}

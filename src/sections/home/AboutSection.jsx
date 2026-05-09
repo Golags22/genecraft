@@ -80,35 +80,38 @@ export default function AboutSection() {
   ];
 
   return (
-    <section className="about-section bg-gray-300 py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <section className="about-section bg-gray-50 py-20 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-5xl mx-auto">
+        
+        {/* Section Header */}
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-2 bg-[#74377a]/10 text-[#74377a] rounded-full text-sm font-semibold mb-4">
-            Our Advantages
+            About Us
           </span>
-          <h2 className="about-heading text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 flex flex-wrap items-center justify-center">
-            Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f9b7dd] to-[#74377a] pr-2">Gene-Craft </span>?
+          <h2 className="about-heading text-4xl md:text-5xl font-bold text-gray-900 mb-6 flex flex-wrap items-center justify-center gap-x-2">
+            Who
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f9b7dd] to-[#74377a]">
+              are we
+            </span>
+            ?
           </h2>
-          <p className="about-description text-xl text-gray-900 max-w-3xl mx-auto">
-            We provide high-quality online courses taught by industry experts, accessible anywhere, anytime. 
-            Learn at your own pace and get certified with credentials that matter.
+          <p className="about-description text-gray-700 max-w-4xl mx-auto leading-relaxed text-left md:text-left space-y-4">
+            <span className="block">
+              Genecraft Microbial Genomics Academy is a for-profit in-silico lab focused on making practical training in microbial genomic data analysis. It was founded to bridge the gap between the high demand for bioinformatics skills and the limited, often expensive training opportunities available for individuals in the biological sciences field.
+            </span>
+            <span className="block mt-4">
+              The academy offers hands-on training in microbial genomics, computer-aided drug design, and geospatial analysis. Rather than just teaching theory, participants work with genomic datasets from sources like NCBI GenBank and the European Nucleotide Archive (ENA), gaining practical experience with tools such as BLAST, Galaxy, and MEGA.
+            </span>
+            <span className="block mt-4">
+              Genecraft also trains participants in molecular docking of plant-based compounds using tools like AutoDock, PyRx, Discovery Studio, and the Maestro interface from Schrödinger. In addition, it provides geospatial training using ArcGIS for mapping and spatial data analysis.
+            </span>
+            <span className="block mt-4">
+              So far, the academy has successfully trained three cohorts, with 30 beneficiaries from different academic and research institutions across Nigeria. These trainees have gained useful, hands-on skills to support their research.
+            </span>
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {features.map((feature, index) => (
-            <div 
-              key={index}
-              className="feature-card bg-white dark:bg-[#74377a]/10 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300 group"
-            >
-              <div className="w-16 h-16 bg-[#f9b7dd]/20 dark:bg-[#74377a]/30 rounded-full flex items-center justify-center mb-6 text-[#74377a] group-hover:bg-[#f9b7dd]/30 dark:group-hover:bg-[#74377a]/50 transition-colors duration-300">
-                {feature.icon}
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">{feature.title}</h3>
-              <p className="text-gray-800">{feature.description}</p>
-            </div>
-          ))}
-        </div>
+ 
 
       </div>
     </section>

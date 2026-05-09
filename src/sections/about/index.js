@@ -1,10 +1,10 @@
 import Hero from './Hero';
 import Mission from './Mission';
-import WhatweOffer from './WhatweOffer';
+import Howitwork from './Howitwork';
 import OurStory from './OurStory';
 import BoardOfDirectors from './Boardofdirective';
 import Partiners from './Partiners';
 
 export{
-    Hero,Mission,WhatweOffer,OurStory,BoardOfDirectors,Partiners
+    Hero,Mission,Howitwork,OurStory,BoardOfDirectors,Partiners
 }

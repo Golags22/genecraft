@@ -26,8 +26,9 @@ export default function Footer() {
               <span className="text-2xl font-bold text-white pl-6"> Gene Craft</span>
             </div>
             <p className="text-gray-400">
-              Empowering learners worldwide with accessible, high-quality education in microbial genomics and bioinformatics.
+             Empowering a community of researchers to upskill in bioinformatics
             </p>
+            <p >Company number: 8429143</p>
             <div className="flex space-x-4">
                 {social.map((socialmedials)=>(
                   <a
@@ -62,7 +63,7 @@ export default function Footer() {
           </div>
 
           {/* Resources */}
-          <div className="space-y-4">
+          {/* <div className="space-y-4">
             <h3 className="text-lg font-semibold text-white">Resources</h3>
             <ul className="space-y-2">
               {['Blog', 'Tutorials', 'Webinars', 'Documentation'].map((resource) => (
@@ -76,7 +77,7 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Newsletter */}
           <div className="space-y-4">

@@ -82,7 +82,7 @@ export default function Hero() {
 
           {/* Subheadline */}
           <p className="text-xl sm:text-2xl text-gray-700 mb-8 leading-relaxed">
-            Unlock <span className="font-semibold text-gray-700">your potentials </span> with hands-on skills in Genomic data analysis and computer aided drug design(CAAD)
+            Unlock <span className="font-semibold text-gray-700">your potentials </span> with hands-on skills in Genomic data analysis and computer aided drug design (CADD)
           </p>
 
           {/* Buttons */}
