@@ -97,7 +97,7 @@ export default function AboutSection() {
           </h2>
           <p className="about-description text-gray-700 max-w-4xl mx-auto leading-relaxed text-left md:text-left space-y-4">
             <span className="block">
-              Genecraft Microbial Genomics Academy is a for-profit in-silico lab focused on making practical training in microbial genomic data analysis. It was founded to bridge the gap between the high demand for bioinformatics skills and the limited, often expensive training opportunities available for individuals in the biological sciences field.
+              Genecraft Microbial Genomics Academy is an in-silico lab focused on making practical training in microbial genomic data analysis. It was founded to bridge the gap between the high demand for bioinformatics skills and the limited, often expensive training opportunities available for individuals in the biological sciences field.
             </span>
             <span className="block mt-4">
               The academy offers hands-on training in microbial genomics, computer-aided drug design, and geospatial analysis. Rather than just teaching theory, participants work with genomic datasets from sources like NCBI GenBank and the European Nucleotide Archive (ENA), gaining practical experience with tools such as BLAST, Galaxy, and MEGA.

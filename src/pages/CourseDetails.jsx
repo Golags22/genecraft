@@ -82,7 +82,7 @@ export default function CourseDetails() {
 
       {/* Course Stats */}
       <div className="flex items-center gap-4 mb-6">
-        <span className="text-gray-600">Price: ${course.price}</span>
+        <span className="text-gray-600">Price: ₦{course.price}</span>
         <span className="text-gray-600">Category: {course.category}</span>
         <span className="text-gray-600">Rating: {course.rating || 0}/5</span>
       </div>

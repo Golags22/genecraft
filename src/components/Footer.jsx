@@ -80,7 +80,7 @@ export default function Footer() {
           </div> */}
 
           {/* Newsletter */}
-          <div className="space-y-4">
+          {/* <div className="space-y-4">
             <h3 className="text-lg font-semibold text-white">Stay Updated</h3>
             <p className="text-gray-400">
               Subscribe to our newsletter for the latest courses and updates.
@@ -99,7 +99,7 @@ export default function Footer() {
                 Subscribe
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
 
         {/* Divider */}
@@ -108,7 +108,7 @@ export default function Footer() {
         {/* Bottom Footer */}
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © {currentYear} E-Learn. All rights reserved.
+            © {currentYear} Gene Craft. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors duration-300">

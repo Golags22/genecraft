@@ -96,6 +96,63 @@ export default function Howitwork (){
           </svg>
         </a>
       </div>
+     <section className="py-16 px-4 md:px-8 bg-gray-50">
+  <div className="max-w-6xl mx-auto">
+    {/* Section Header */}
+    <div className="text-center mb-12">
+      <h2 className="text-3xl md:text-4xl font-bold text-[#74377a] mb-3">
+        Other Services Rendered
+      </h2>
+      <div className="w-20 h-1 bg-[#74377a] mx-auto rounded-full"></div>
+      <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+        Expert solutions tailored to your academic and research needs
+      </p>
+    </div>
+
+    {/* Services Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {/* Service 1 - Hybrid In-Person Training */}
+      <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-t-4 border-[#74377a] group">
+        <div className="flex items-start gap-4">
+          <div className="bg-[#74377a]/10 rounded-xl p-3 group-hover:bg-[#74377a] transition-colors duration-300">
+            <svg className="w-8 h-8 text-[#74377a] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4-4 4M7 8l-4 4 4 4" />
+            </svg>
+          </div>
+          <div className="flex-1">
+            <h3 className="text-xl font-bold text-gray-800 mb-2">Hybrid In-Person Training</h3>
+            <p className="text-gray-600 leading-relaxed">
+              We bring hands-on, practical training directly to academics, researchers, and lab teams. Flexible schedules, projects, and expert instructors  so your team can apply skills as they learn
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Service 2 - Genomics Data Analysis */}
+      <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-t-4 border-[#74377a] group">
+        <div className="flex items-start gap-4">
+          <div className="bg-[#74377a]/10 rounded-xl p-3 group-hover:bg-[#74377a] transition-colors duration-300">
+            <svg className="w-8 h-8 text-[#74377a] group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+          </div>
+          <div className="flex-1">
+            <h3 className="text-xl font-bold text-gray-800 mb-2">
+              Genomics Data Analysis & Bioinformatics Support
+            </h3>
+            <p className="text-gray-600 leading-relaxed">
+              Stuck on complex sequencing data? We handle end-to-end analysis and build custom 
+              bioinformatics workflows for researchers and postgraduate students in biological sciences. 
+              Get clean results, and less stress.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
     </section>
   );
 };

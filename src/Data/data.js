@@ -220,39 +220,30 @@ export const director = [
   {
     name: "GOLAGHA OGHENEVWEDE REGINA",
     title: "CEO & Founder",
-    bio: "Golagha Regina is a Molecular Scientist and the founder of Genecraft Microbial Genomics Academy, an initiative dedicated to making practical, accessible training in computational biology and microbial research available to students and young scientists across Nigeria.Her research focuses on the role of microbial communities in human health and disease, with particular interest in how gut microbial imbalance contributes to chronic inflammation and disease progression through the gut-liver axis. She also has experience in antimicrobial resistance studies and the characterization of clinically relevant microorganisms.Through Genecraft, she is passionate about equipping the next generation of scientists with hands-on skills in data-driven biological research, bridging the gap between theoretical knowledge and real-world application. Her work is driven by a commitment to advancing scientific capacity and improving research accessibility.",
+    bio: "Golagha Regina is a Molecular Biology and Microbial Genomics researcher and the founder of Genecraft Microbial Genomics Academy, an initiative dedicated to providing practical and accessible training in computational biology, microbial genomics, and data-driven biological research for students and young scientists across Nigeria.Her research interests focus on molecular microbiology, antimicrobial resistance, microbial genomics, and host–microbiota interactions. She has worked extensively on studies involving carbapenem-resistant Enterobacteriaceae, metallo-beta-lactamase-producing pathogens, and the characterization of clinically relevant microorganisms from clinical, environmental, and agricultural settings. Her work also explores the relationship between gut microbial imbalance and human health, particularly the role of the gut–liver axis in chronic inflammation, neuropsychiatric conditions, and disease progression.Regina holds a B.Sc. in Microbiology from Delta State University, Abraka, and an M.Sc. from the Federal University of Agriculture, Abeokuta, where her research focused on molecular and microbiological approaches to understanding infectious diseases and antimicrobial resistance patterns. Her expertise combines laboratory microbiology with genomic and computational approaches to address emerging challenges in public health and translational research. Through Genecraft Microbial Genomics Academy, she is passionate about equipping the next generation of scientists with hands-on skills in bioinformatics, microbial genomics, and modern biological data analysis. Her work is driven by a commitment to advancing scientific capacity, improving research accessibility, and fostering innovation in microbial and health sciences across Africa.",
     image:
       "https://res.cloudinary.com/ddquednvr/image/upload/v1755359446/CEO.png",
     linkedin: "#",
-  },
-  {
-    name: "AANUOLUWAPO ALAKE",
-    title: "CO-FOUNDER",
-    bio: "Microbiologist, Molecular docking and Pharmacognosy enthusiast",
-    image:
-      "https://res.cloudinary.com/ddquednvr/image/upload/v1755359492/cof1.png",
-    linkedin: "#",
-  },
-  {
-    name: "SUNMOLA ADEBOLA",
-    title: "CO-FOUNDER",
-    bio: "Medical Microbiologist, Partner at African women in agricultural research and development (AWARD)",
-    image:
-      "https://res.cloudinary.com/ddquednvr/image/upload/v1755359489/cof2.png",
-    linkedin: "#",
-  },
+  }
 
 ];
 export const Collaborators = [
   {
     name: "Oluwamuyiwa Agbi ",
-    title: "Computational scientist, currently undergoing cancer research",
+    description: "Mayowa Agbi is a Nigerian bioinformatician, computational scientist, and researcher specializing in cancer genomics, artificial intelligence, computational biology, and in-silico pharmacology. He currently works as a Bioinformatician at The GeneLab Bioscience, where he develops advanced clinical oncology pipelines for leukemia classification, pharmacogenomics, and cancer risk prediction using Oxford Nanopore Technologies (ONT).He has over five years of multidisciplinary experience combining biological sciences, engineering, and computer programming. His expertise includes Genome-Wide Association Studies (GWAS), machine learning, high-throughput genomic analysis, and programming with Python, R, Linux/Bash, Arduino, and C++. Mayowa’s research interests focus on precision medicine, cancer genomics, plant genomics, and infectious diseases. During his M.Sc. in Bioinformatics at Covenant University, he designed a Deep Neural Network (DNN) model for Compound-Protein Interaction (CPI) prediction related to prostate cancer biomarkers. He also holds a B.Sc. in Microbiology from Adekunle Ajasin University.Beyond research, he has experience in engineering and innovation, including the development of a biosensor-based immunosensor for tuberculosis detection and the design of a 112 kW solar farm system. He is also recognized as a tutor and mentor in Computer-Aided Drug Design (CADD), having guided researchers and professors in the field.",
     image:
       "https://res.cloudinary.com/ddquednvr/image/upload/v1761497086/gene_craft_002_wklpij.jpg",
   },
   {
+    name: "Samuel Bahago ",
+    description: "Samuel Bahago is a GIS Analyst at MECON Services Ltd. with over four years of experience in geospatial analysis, environmental management, and watershed planning. He specializes in GIS mapping, satellite imagery analysis, and the development of geospatial visualizations for environmental and infrastructure projects.He is proficient in the use of geoscience software such as ArcGIS, Rockworks, Oasis Montaj, and Surfer, with expertise in flood risk studies, topographic and geologic mapping, and spatial data analysis from satellite sources including Landsat, SRTM, and ASTER imagery.",
+    image:
+      "https://res.cloudinary.com/ddquednvr/image/upload/v1777543764/IMG-20251025-WA0063_gyojyo.jpg",
+  
+  },
+  {
     name: "Temitayo Ogundimu ",
-    title: "Bioinformatician",
+    description: "Temitayo Ogundimu is a Bioinformatician. He bagged his MSc in Bioinformatics from Covenant University Ota Nigeria.",
     image:
       "https://res.cloudinary.com/ddquednvr/image/upload/v1761497050/Gene_craft_00_cxlsc2.jpg",
   
@@ -494,9 +485,9 @@ export const social = [
     img:"/icons/icons8-linkedin.svg"
   },
   {
-    name: "linkedin",
+    name: "youtube",
     link: "https://www.youtube.com/@Genecraft-MA",
-    img:"/icons/icons8-youtube.svg"
+    img:"/icons/youtube.png"
   },
   
 ];

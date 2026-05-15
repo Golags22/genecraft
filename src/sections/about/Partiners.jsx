@@ -3,31 +3,52 @@ import { useState, useEffect } from "react";
 
 export default function Partners() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const slidesToShow = 4; // Adjust based on your responsive needs
+  const [slidesToShow, setSlidesToShow] = useState(4);
 
+  // Handle responsive slides to show
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 640) {
+        setSlidesToShow(1);
+      } else if (window.innerWidth < 768) {
+        setSlidesToShow(2);
+      } else if (window.innerWidth < 1024) {
+        setSlidesToShow(3);
+      } else {
+        setSlidesToShow(4);
+      }
+    };
+    
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
+  // Auto slide
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % partners.length);
-    }, 3000);
+    }, 4000);
     return () => clearInterval(interval);
   }, [partners.length]);
 
+  // Reset current slide when slidesToShow changes
+  useEffect(() => {
+    setCurrentSlide(0);
+  }, [slidesToShow]);
+
   return (
-    <section className="py-16 px-4 bg-white dark:bg-gray-900">
+    <section className="py-20 px-4 bg-gradient-to-br from-[#74377a]/5 via-white to-[#74377a]/5">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
-            <span className="relative inline-block">
-              Our Valued Partners
-              <span className="absolute top-12 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-cyan-400 transform -translate-y-2"></span>
-            </span>
+        {/* Section Header */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+            Our Valued <span className="text-[#74377a]">Partners</span>
           </h2>
-         
         </div>
 
         {/* Partners Carousel */}
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden px-4 sm:px-8 md:px-12">
           <div 
             className="flex transition-transform duration-500 ease-in-out"
             style={{ transform: `translateX(-${currentSlide * (100 / slidesToShow)}%)` }}
@@ -35,16 +56,18 @@ export default function Partners() {
             {[...partners, ...partners].map((partner, idx) => (
               <div 
                 key={idx} 
-                className="flex-shrink-0 px-4"
+                className="flex-shrink-0 px-2 sm:px-3 md:px-4"
                 style={{ width: `${100 / slidesToShow}%` }}
               >
-                <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 flex flex-col items-center justify-center h-48 hover:shadow-lg transition-all duration-300">
-                  <img 
-                    src={partner.logo} 
-                    alt={partner.name} 
-                    className="h-16 object-contain mb-4"
-                  />
-                  <h3 className="text-lg font-medium text-center text-gray-800 dark:text-gray-200">
+                <div className="bg-white rounded-xl p-4 sm:p-6 flex flex-col items-center justify-center h-40 sm:h-48 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group border-2 border-transparent hover:border-[#74377a]/20">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center mb-3">
+                    <img 
+                      src={partner.logo} 
+                      alt={partner.name} 
+                      className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <h3 className="text-sm sm:text-base font-semibold text-center text-gray-700 group-hover:text-[#74377a] transition-colors">
                     {partner.name}
                   </h3>
                 </div>
@@ -52,33 +75,42 @@ export default function Partners() {
             ))}
           </div>
 
-          {/* Navigation Arrows */}
+          {/* Navigation Arrows - Hidden on mobile */}
           <button 
             onClick={() => setCurrentSlide((prev) => (prev - 1 + partners.length) % partners.length)}
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300 hover:scale-110"
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white p-2 sm:p-3 rounded-full shadow-lg hover:bg-[#74377a] hover:text-white transition-all duration-300 hover:scale-110 group hidden sm:block"
             aria-label="Previous partners"
           >
-            <svg className="w-6 h-6 text-gray-700 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 sm:w-5 sm:h-5 text-[#74377a] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"/>
             </svg>
           </button>
           
           <button 
             onClick={() => setCurrentSlide((prev) => (prev + 1) % partners.length)}
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white dark:bg-gray-800 p-3 rounded-full shadow-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-300 hover:scale-110"
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white p-2 sm:p-3 rounded-full shadow-lg hover:bg-[#74377a] hover:text-white transition-all duration-300 hover:scale-110 group hidden sm:block"
             aria-label="Next partners"
           >
-            <svg className="w-6 h-6 text-gray-700 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 sm:w-5 sm:h-5 text-[#74377a] group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/>
             </svg>
           </button>
         </div>
 
-        {/* CTA */}
-        <div className="text-center mt-16">
-          <button className="px-8 py-4 border-2 border-blue-600 text-blue-600 dark:text-blue-400 font-bold rounded-xl hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-300">
-            Become a Partner
-          </button>
+        {/* Dots Indicator */}
+        <div className="flex justify-center gap-2 mt-8 flex-wrap">
+          {partners.map((_, idx) => (
+            <button
+              key={idx}
+              onClick={() => setCurrentSlide(idx)}
+              className={`h-2 rounded-full transition-all duration-300 ${
+                currentSlide === idx 
+                  ? "w-6 sm:w-8 bg-[#74377a]" 
+                  : "w-2 bg-[#74377a]/30 hover:bg-[#74377a]/50"
+              }`}
+              aria-label={`Go to slide ${idx + 1}`}
+            />
+          ))}
         </div>
       </div>
     </section>

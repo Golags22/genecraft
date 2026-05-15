@@ -425,7 +425,7 @@ export default function CourseDetail() {
                           <FiDollarSign className="mr-2" />
                           <span className="text-sm">Price</span>
                         </div>
-                        <p className="text-xl font-bold text-gray-800">${course.price || 0}</p>
+                        <p className="text-xl font-bold text-gray-800">₦{course.price || 0}</p>
                       </div>
                       <div className="bg-gray-50 p-4 rounded-lg">
                         <div className="flex items-center text-gray-500 mb-1">
@@ -539,7 +539,7 @@ export default function CourseDetail() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">
-                        Current Price ($)
+                        Current Price (₦)
                       </label>
                       <input
                         type="number"
@@ -552,7 +552,7 @@ export default function CourseDetail() {
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">
-                        Original Price ($)
+                        Original Price (₦)
                       </label>
                       <input
                         type="number"
@@ -569,14 +569,14 @@ export default function CourseDetail() {
                     <div className="flex items-center justify-between">
                       <div>
                         <p className="text-sm text-gray-600">Current Price</p>
-                        <p className="text-2xl font-bold text-gray-800">${course.price || 0}</p>
+                        <p className="text-2xl font-bold text-gray-800"> ₦{course.price || 0}</p>
                       </div>
                       {course.originalPrice && course.originalPrice > course.price && (
                         <div className="text-right">
                           <p className="text-sm text-gray-600 line-through">Original Price</p>
-                          <p className="text-lg text-gray-500 line-through">${course.originalPrice}</p>
+                          <p className="text-lg text-gray-500 line-through"> ₦{course.originalPrice}</p>
                           <p className="text-sm text-green-600 font-medium">
-                            Save ${(course.originalPrice - course.price).toFixed(2)} (
+                            Save  ₦{(course.originalPrice - course.price).toFixed(2)} (
                             {Math.round((1 - course.price / course.originalPrice) * 100)}% off)
                           </p>
                         </div>

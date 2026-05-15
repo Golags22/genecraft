@@ -70,7 +70,7 @@ export default function PaymentButton({ course, userId }) {
       disabled={isProcessing}
       className="w-full py-3.5 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300 disabled:opacity-50"
     >
-      {isProcessing ? 'Processing...' : `Buy Course $${course.price}`}
+      {isProcessing ? 'Processing...' : `Buy Course ₦${course.price}`}
     </button>
   );
 }

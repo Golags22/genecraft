@@ -57,7 +57,7 @@ export default function BoardOfDirectors() {
         <div className="text-center mb-16">
           <span className="inline-block w-10 h-1 bg-[#74377a] rounded-sm mb-4"></span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
-            Board of Directors
+            Meet our Team
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Our distinguished leaders guiding the organization's vision and strategy
@@ -78,20 +78,42 @@ export default function BoardOfDirectors() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {Collaborators.map((collaborator, index) => (
-              <div key={index} className="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg hover:shadow-[#74377a]/10 transition-all duration-300 hover:-translate-y-2 group">
-                <div className="relative h-64 overflow-hidden">
-                  <img src={collaborator.image} alt={collaborator.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#74377a]/90 via-[#74377a]/40 to-transparent flex items-end p-6">
-                    <div>
-                      <h3 className="text-xl font-bold text-white">{collaborator.name}</h3>
-                      <p className="text-purple-200 text-sm">{collaborator.title}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
+  {Collaborators.map((collaborator, index) => {
+    const [isExpanded, setIsExpanded] = useState(false);
+    const description = collaborator.description || "No description available.";
+    const shouldTruncate = description.length > 100;
+    const truncatedText = description.slice(0, 100) + "...";
+
+    return (
+      <div key={index} className="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg hover:shadow-[#74377a]/10 transition-all duration-300 hover:-translate-y-2 group flex flex-col h-full">
+        <div className="relative h-64 overflow-hidden">
+          <img src={collaborator.image} alt={collaborator.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#74377a]/90 via-[#74377a]/40 to-transparent flex items-end p-6">
+            <div>
+              <h3 className="text-xl font-bold text-white">{collaborator.name}</h3>
+              <p className="text-purple-200 text-sm">{collaborator.title}</p>
+            </div>
           </div>
+        </div>
+        
+        {/* Description section with Read More */}
+        <div className="p-5 flex-grow">
+          <p className="text-gray-700 text-sm leading-relaxed">
+            {isExpanded ? description : truncatedText}
+          </p>
+          {shouldTruncate && (
+            <button
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="mt-3 text-[#74377a] hover:text-[#5a2b5e] text-sm font-semibold transition-colors duration-200 focus:outline-none"
+            >
+              {isExpanded ? "Read Less" : "Read More"}
+            </button>
+          )}
+        </div>
+      </div>
+    );
+  })}
+</div>
         </div>
 
       </div>

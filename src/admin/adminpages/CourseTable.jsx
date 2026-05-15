@@ -427,7 +427,7 @@ export default function CourseTable() {
                           <FiDollarSign className="mr-1 text-gray-400" />
                           <div>
                             <div className="text-sm font-semibold text-gray-900">
-                              ${course.price || 0}
+                               ₦{course.price || 0}
                             </div>
                             {course.originalPrice && course.originalPrice > course.price && (
                               <div className="text-xs text-gray-500 line-through">
